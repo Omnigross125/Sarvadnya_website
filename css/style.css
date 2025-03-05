@@ -5587,7 +5587,6 @@ select:focus {
 .content-box p {
     font-size: 1.7rem;
     color: #555;
-    
     line-height: 1.6;
     max-width: 90%; /* Keeps text neatly aligned */
 }
@@ -5746,7 +5745,7 @@ select:focus {
 
 .image-box, .content-box {
     flex: 1;
-    font-weight: bold;
+    /* font-weight: bold; */
     max-width: 50%; /* Ensures equal width distribution */
 }
 
@@ -5879,7 +5878,7 @@ select:focus {
 
 .content-box p {
     font-size: 1.7rem;
-    font-weight: bold;
+    /* font-weight: bold; */
     color: #555;
     line-height: 1.6;
     max-width: 100%; /* Removes extra margin */
