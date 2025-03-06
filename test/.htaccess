@@ -59,6 +59,3 @@ RewriteRule ^sarvadnyayoga%40gmail\.php$ /sarvadnyayoga%40gmail.html? [L,R=301]
 # php -- END cPanel-generated handler, do not edit
 
 
-<Files "robots.txt">
-    Header set Content-Type "text/plain"
-</Files>
