@@ -6058,6 +6058,101 @@ span {
 }
 
 
+/* pricing section css*/
+
+.pricing-section {
+    text-align: center;
+    margin: 20px;
+}
+
+.toggle-buttons {
+    margin-bottom: 20px;
+}
+
+.toggle-buttons button {
+    background-color: #a8e6cf; /* Light green */
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 0 5px;
+    border-radius: 25px; /* Rounded edges */
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.toggle-buttons button.active {
+    background-color: #81c784; /* Darker green for active button */
+    color: white;
+}
+
+.pricing-container {
+    display: none;
+}
+
+.pricing-container.active {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing-box {
+    border: 1px solid #81c784; /* Darker green */
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    background-color: #ffffff; /* White background for boxes */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.pricing-box:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Enhanced shadow on hover */
+}
+
+.pricing-box h3 {
+    margin: 0 0 10px;
+}
+
+.pricing-box ul {
+    list-style-type: none; /* Remove bullet points */
+    padding: 0;
+    margin: 10px 0;
+    font-size: 14px; /* Smaller font for services */
+}
+
+.join-now {
+    background-color: #4caf50; /* Green color for visibility */
+    color: white; /* White text */
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    width: 100%; /* Full width */
+    margin-top: 10px; /* Space above the button */
+}
+
+.join-now:hover {
+    background-color: #388e3c; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
