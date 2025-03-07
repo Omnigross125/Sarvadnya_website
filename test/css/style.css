@@ -2037,36 +2037,56 @@ select:focus {
     color: #888888;
 }
 
- .footer-social-links {
+.footer-social-links {
     overflow: hidden;
-    /* float: right; */	padding-left:50px;
+    padding-left: 50px; /* Adjust as needed */
 }
- .footer-social-links li{
+
+.footer-social-links ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margin */
+}
+
+.footer-social-links li {
     display: inline-block;
-    float: left;
     margin-right: 10px;
 }
- .footer-social-links li:last-child{
+
+.footer-social-links li:last-child {
     margin-right: 0;
 }
- .footer-social-links li a i{
-    height: 40px;
-    width: 40px;
-    border: 2px solid #323232;
-    display: block;
-    border-radius: 50%;
-    color: #999999;
-    font-size: 14px;
-    text-align: center;
-    line-height: 38px;
-    transition: all 500ms ease;
-}
- .footer-social-links li a:hover i{
-    background: #2acb35;
-    color: #fff;
-    border-color: #2acb35;
-} .footer-social-links .fa-facebook{	  background: #3b5998;	  color:white; } .footer-social-links .fa-twitter{	  background: #1da1f2;	  color:white; } .footer-social-links .fa-linkedin{	  background: #007bb6;	  color:white; }
 
+.footer-social-links li a i {
+    font-size: 20px; /* Match icon size with top bar */
+    color: #2acb35; /* Default light green color matching the theme */
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-social-links li a:hover i,
+.footer-social-links li a:focus i {
+    transform: scale(1.1); /* Smooth scaling effect on hover */
+}
+
+/* Adding specific hover effects for each icon */
+.footer-social-links li a .fa-facebook:hover {
+    color: #1877F2; /* Facebook hover effect */
+}
+
+.footer-social-links li a .fa-instagram:hover {
+    color: #E4405F; /* Instagram hover effect */
+}
+
+.footer-social-links li a .fa-linkedin:hover {
+    color: #0A66C2; /* LinkedIn hover effect */
+}
+
+.footer-social-links li a .fa-youtube:hover {
+    color: #FF0000; /* YouTube hover effect */
+}
 
 
 /*** 
@@ -2074,7 +2094,7 @@ select:focus {
     Breadcrumb area style
 =============================================
 ***/
-.breadcrumb-area {
+/* .breadcrumb-area {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
@@ -2091,7 +2111,43 @@ select:focus {
     line-height: 50px;
     text-transform: capitalize;
     text-align: center;
+} */
+
+
+.breadcrumb-area {
+    background-position: center center; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    padding-top: 150px; 
+    padding-bottom: 150px; 
+    position: relative;
+    z-index: 1;
+    height: 480px; 
 }
+
+.breadcrumb-area .breadcrumbs {}
+
+.breadcrumb-area .breadcrumbs h1 {
+    color: #ffffff;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 150px;
+    text-transform: capitalize;
+    text-align: center;
+    margin: 0; 
+    padding: 0 20px; 
+}
+
+
+
+
+
+
+
+
+
+
+
 
 
 
