@@ -6154,8 +6154,8 @@ span {
 .pricing-box {
     border: 1px solid #81c784; /* Darker green */
     border-radius: 8px;
-    padding: 20px;
-    width: 250px;
+    padding: 30px; /* Increased padding for more space */
+    width: 300px; /* Increased width */
     background-color: #ffffff; /* White background for boxes */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s, box-shadow 0.3s;
@@ -6194,7 +6194,6 @@ span {
     background-color: #388e3c; /* Darker green on hover */
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
-
 
 
 
