@@ -1727,11 +1727,23 @@ select:focus {
     Footer area style
 =============================================
 ***/
-.footer-area {
+/* .footer-area {
     background: #222426;
     padding-top: 10px;
     padding-bottom: 5px;
     position: relative;
+} */
+
+.footer-area {
+    background: #222426; /* Keep the background color */
+    padding: 11px 15px; /* Reduced vertical padding and added horizontal padding */
+    position: relative;
+    margin: 0; /* Ensure no extra margin is applied */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow for depth */
+    color: #ffffff; /* Set text color for better readability */
+    font-size: 14px; /* Adjust font size for better appearance */
+    text-align: left; /* Left align text */
+    line-height: 2.5; /* Adjust line height for better spacing between lines */
 }
 .single-footer-widget {
     position: relative;
@@ -2007,6 +2019,77 @@ select:focus {
 }
 
 
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .single-footer-widget {
+        margin-bottom: 20px; /* Add space between widgets */
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-area {
+        padding: 20px 10px; /* Adjust padding for smaller screens */
+    }
+    .single-footer-widget {
+        width: 100%; /* Make widgets full width */
+        margin-bottom: 20px; /* Add space between widgets */
+    }
+    .single-footer-widget .title {
+        padding-bottom: 20px; /* Adjust title padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-area {
+        text-align: left; /* Ensure text remains left-aligned */
+    }
+    .single-footer-widget {
+        margin-bottom: 15px; /* Add space between widgets */
+        padding: 0 10px; /* Add padding for better spacing */
+    }
+    .single-footer-widget .footer-contact-info li {
+        padding-bottom: 10px; /* Adjust padding for contact info */
+    }
+    .single-footer-widget .usefull-links.fl-lft {
+        float: none; /* Remove float for links */
+        width: auto; /* Set width to auto */
+        border-right: none; /* Remove border */
+        padding-right: 0; /* Remove padding */
+        margin-right: 0; /* Remove margin */
+    }
+}
+
+@media (max-width: 576px) {
+    .footer-area {
+        padding: 10px; /* Reduce padding for very small screens */
+    }
+    .single-footer-widget .footer-contact-info li {
+        padding-left: 10px; /* Adjust padding for smaller screens */
+    }
+    .single-footer-widget .footer-contact-info li .icon-holder {
+        top: 0; /* Adjust icon position */
+    }
+    .single-footer-widget .newsletter-box form.newsletter-form input[type="text"] {
+        padding-left: 10px; /* Adjust padding for input */
+    }
+    .single-footer-widget .newsletter-box form.newsletter-form button {
+        width: 40px; /* Adjust button width */
+    }
+}
+
+/* Ensure all text is visible and readable */
+.single-footer-widget .footer-contact-info li h5 {
+    font-size: 12px; /* Smaller font size for mobile */
+}
+
+.single-footer-widget .usefull-links li a {
+    font-size: 12px; /* Smaller font size for mobile */
+}
+
+.single-footer-widget .latest-post .single-post .text-holder a.post-title {
+    font-size: 12px; /* Smaller font size for mobile */
+}
+
 
 /*** 
 =============================================
@@ -2039,13 +2122,13 @@ select:focus {
 
 .footer-social-links {
     overflow: hidden;
-    padding-left: 50px; /* Adjust as needed */
+    padding-left: 50px; 
 }
 
 .footer-social-links ul {
-    list-style: none; /* Remove default list styling */
-    padding: 0; /* Remove padding */
-    margin: 0; /* Remove margin */
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
 }
 
 .footer-social-links li {
@@ -2058,8 +2141,8 @@ select:focus {
 }
 
 .footer-social-links li a i {
-    font-size: 20px; /* Match icon size with top bar */
-    color: #2acb35; /* Default light green color matching the theme */
+    font-size: 20px; 
+    color: #2acb35; 
     transition: all 0.3s ease-in-out;
     display: inline-flex;
     align-items: center;
@@ -2068,25 +2151,28 @@ select:focus {
 
 .footer-social-links li a:hover i,
 .footer-social-links li a:focus i {
-    transform: scale(1.1); /* Smooth scaling effect on hover */
+    transform: scale(1.1); 
 }
 
-/* Adding specific hover effects for each icon */
+
 .footer-social-links li a .fa-facebook:hover {
-    color: #1877F2; /* Facebook hover effect */
-}
+    color: #1877F2; }
 
 .footer-social-links li a .fa-instagram:hover {
-    color: #E4405F; /* Instagram hover effect */
+    color: #E4405F; 
 }
 
 .footer-social-links li a .fa-linkedin:hover {
-    color: #0A66C2; /* LinkedIn hover effect */
+    color: #0A66C2; 
 }
 
 .footer-social-links li a .fa-youtube:hover {
-    color: #FF0000; /* YouTube hover effect */
+    color: #FF0000; 
 }
+
+
+
+
 
 
 /*** 
