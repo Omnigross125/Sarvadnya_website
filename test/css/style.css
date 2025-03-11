@@ -124,6 +124,7 @@ a:focus {
 img {
 	max-width: 100%;
     height: auto;
+    
 }
 i {
 	font-style: normal;
@@ -2120,7 +2121,7 @@ select:focus {
     color: #888888;
 }
 
-.footer-social-links {
+/* .footer-social-links {
     overflow: hidden;
     padding-left: 50px; 
 }
@@ -2158,17 +2159,86 @@ select:focus {
 .footer-social-links li a .fa-facebook:hover {
     color: #1877F2; }
 
-.footer-social-links li a .fa-instagram:hover {
-    color: #E4405F; 
-}
-
 .footer-social-links li a .fa-linkedin:hover {
-    color: #0A66C2; 
-}
+            color: #0A66C2; 
+}   
 
 .footer-social-links li a .fa-youtube:hover {
     color: #FF0000; 
 }
+
+.footer-social-links li a .fa-instagram:hover {
+    color: #E4405F; 
+} */
+
+.footer-social-links {
+    overflow: hidden;
+    padding-left: 50px; 
+}
+
+.footer-social-links ul {
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+}
+
+.footer-social-links li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.footer-social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-social-links li a i {
+    font-size: 20px; /* Increased icon size for better visibility */
+    color: #2acb35; /* Default light green color */
+    transition: all 0.3s ease-in-out;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Hover effects for icons */
+.footer-social-links li a:hover i,
+.footer-social-links li a:focus i {
+    transform: scale(1.1); /* Smooth scaling effect on hover */
+}
+
+/* Adding hover effects for each social media icon */
+.footer-social-links li a .fa-whatsapp:hover {
+    color: #128C7E; /* WhatsApp hover effect */
+}
+
+.footer-social-links li a .fa-x-twitter:hover {
+    color: #1DA1F2; /* Twitter (X) hover effect */
+}
+
+.footer-social-links li a .fa-facebook:hover {
+    color: #1877F2; /* Facebook hover effect */
+}
+
+.footer-social-links li a .fa-linkedin:hover {
+    color: #0A66C2; /* LinkedIn hover effect */
+}
+
+.footer-social-links li a .fa-youtube:hover {
+    color: #FF0000; /* YouTube hover effect */
+}
+
+.footer-social-links li a .fa-instagram:hover {
+    color: #E4405F; /* Instagram hover effect */
+}
+
+/* Ensure icons remain light green on mobile */
+@media only screen and (max-width: 768px) {
+    .footer-social-links li a i {
+        color: #2acb35; /* Ensure icons are light green on mobile */
+    }
+}
+
+
 
 
 
@@ -6959,9 +7029,9 @@ span {
     color: black;
   }
  
-  .footer-social-links .fa-facebook{	  background: #3b5998 !important;	  color:white; } .footer-social-links .fa-instagram{	  background: #2acb35 !important;	  color:white; } .footer-social-links .fa-linkedin{	  background: #007bb6;	  color:white; }
+  /* .footer-social-links .fa-facebook{	  background: #3b5998 !important;	} .footer-social-links .fa-instagram{	  background: #2acb35 !important;	  ; } .footer-social-links .fa-linkedin{	  background: #007bb6;	  }
 
-}
+} */
 
 .panel-heading {
     padding: 16px 15px !important;
