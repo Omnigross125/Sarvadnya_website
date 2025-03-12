@@ -2029,7 +2029,7 @@ select:focus {
 
 @media (max-width: 992px) {
     .footer-area {
-        padding: 20px 10px; /* Adjust padding for smaller screens */
+        padding: 25px 10px; /* Adjust padding for smaller screens */
     }
     .single-footer-widget {
         width: 100%; /* Make widgets full width */
@@ -2062,7 +2062,7 @@ select:focus {
 
 @media (max-width: 576px) {
     .footer-area {
-        padding: 10px; /* Reduce padding for very small screens */
+        padding: 25px; /* Reduce padding for very small screens */
     }
     .single-footer-widget .footer-contact-info li {
         padding-left: 10px; /* Adjust padding for smaller screens */
