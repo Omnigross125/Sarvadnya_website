@@ -5947,8 +5947,8 @@ select:focus {
 
 
 
-
-.testimonials {
+/* Testimonail section css */
+/* .testimonials {
     text-align: center;
     padding: 50px 20px;
     background-color: #f9f9f9;
@@ -5998,9 +5998,85 @@ h3 {
 span {
     color: #777;
     font-size: 14px;
+} */
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    color: #32CD32;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.testimonial-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-image {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #444;
+}
+
+h3 {
+    margin: 10px 0 5px;
+    color: #32CD32;
+}
+
+span {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column; /* Stack testimonials vertically on mobile */
+        align-items: center; /* Center align items */
+    }
+
+    .testimonial-box {
+        max-width: 90%; /* Allow more width on mobile */
+    }
 }
 
 
+/* Register button styles */
 .register-section {
     position: fixed;
     bottom: 0;

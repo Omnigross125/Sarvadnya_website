@@ -2237,7 +2237,7 @@ select:focus {
         color: #2acb35; /* Ensure icons are light green on mobile */
     }
 
-
+/* footer social icons left alignment */
     .footer-social-links {
         display: flex; /* Use flexbox for alignment */
         justify-content: flex-start; /* Align items to the left */
@@ -6172,7 +6172,7 @@ select:focus {
 
 
 /* testimonails css */
-.testimonials {
+/* .testimonials {
     text-align: center;
     padding: 50px 20px;
     background-color: #f9f9f9;
@@ -6222,9 +6222,92 @@ h3 {
 span {
     color: #777;
     font-size: 14px;
+} */
+
+
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.testimonials h2 {
+    color: #32CD32;
+    font-weight: bold;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.testimonials p {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.testimonial-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.testimonial-box {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+.testimonial-box:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.testimonial-image {
+    width: 80px; /* Adjust size as needed */
+    height: 80px; /* Adjust size as needed */
+    border-radius: 50%; /* Makes the image circular */
+    margin-bottom: 15px;
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+
+.testimonial-text {
+    font-style: italic;
+    color: #444;
+}
+
+h3 {
+    margin: 10px 0 5px;
+    color: #32CD32;
+}
+
+span {
+    color: #777;
+    font-size: 14px;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .testimonial-container {
+        flex-direction: column; /* Stack testimonials vertically on mobile */
+        align-items: center; /* Center align items */
+    }
+
+    .testimonial-box {
+        max-width: 90%; /* Allow more width on mobile */
+    }
 }
 
 
+
+
+
+
+
+
+/* Register Now Button styles */
 .register-section {
     position: fixed;
     bottom: 0;
@@ -6232,7 +6315,7 @@ span {
     width: 100%;
     background: rgba(255, 255, 255, 0.95);
     text-align: center;
-    padding: 15px 0;
+    padding: 8px 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
     z-index: 9999; /* Ensures it stays on top */
     display: flex;
@@ -6302,11 +6385,13 @@ span {
     margin: 0 5px;
     border-radius: 25px; /* Rounded edges */
     transition: background-color 0.3s, transform 0.3s;
+    font-weight: bold;
 }
 
 .toggle-buttons button.active {
     background-color: #81c784; /* Darker green for active button */
     color: white;
+    font-weight: bold;
 }
 
 .pricing-container {
@@ -6363,6 +6448,93 @@ span {
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+    .pricing-container {
+        flex-direction: column; /* Stack pricing boxes vertically */
+        align-items: center; /* Center align items */
+    }
+
+    .pricing-box {
+        width: 90%; /* Allow more width on mobile */
+        max-width: 400px; /* Set a max width for larger screens */
+        margin-bottom: 20px; /* Space between boxes */
+    }
+
+    .toggle-buttons button {
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 8px 16px; /* Adjust padding for mobile */
+    }
+}
+
+
+/* FAQ SECTION STYLES */
+.faq-section {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 15px 15px; /* Vertical padding and horizontal padding */
+}
+
+.faq-section h2 {
+    font-size: 2.5em; /* Larger font size for the heading */
+    margin-bottom: 30px; /* Space below the heading */
+}
+
+.panel {
+    margin-bottom: 15px; /* Space between panels */
+    border: 1px solid #ddd; /* Border for panels */
+    border-radius: 5px; /* Rounded corners */
+}
+
+.panel-heading {
+    background-color: #fff; /* White background for the heading */
+    cursor: pointer; /* Pointer cursor for clickable headings */
+}
+
+.panel-title {
+    display: flex; /* Flexbox for alignment */
+    justify-content: space-between; /* Space between title and icon */
+    align-items: center; /* Center items vertically */
+    padding: 8px ; /* Padding for the title */
+    font-size: 1.2em; /* Font size for the title */
+}
+
+.panel-title a {
+    text-decoration: none; /* Remove underline from links */
+    color: #333; /* Dark text color */
+}
+
+.panel-title a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+.panel-body {
+    padding: 15px; /* Padding for the body */
+    font-size: 1em; /* Font size for the body text */
+    color: #555; /* Slightly lighter text color */
+}
+
+.pull-right {
+    font-size: 1.5em; /* Larger icon size */
+    transition: transform 0.3s; /* Smooth transition for rotation */
+}
+
+.panel-collapse.in .pull-right {
+    transform: rotate(45deg); /* Rotate icon when expanded */
+}
+
+@media (max-width: 768px) {
+    .faq-section h2 {
+        font-size: 2em; /* Smaller font size for mobile */
+    }
+
+    .panel-title {
+        font-size: 1em; /* Smaller font size for mobile */
+    }
+
+    .panel-body {
+        font-size: 0.9em; /* Smaller font size for mobile */
+    }
+}
 
 
 
