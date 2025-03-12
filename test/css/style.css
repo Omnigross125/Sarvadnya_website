@@ -2236,9 +2236,21 @@ select:focus {
     .footer-social-links li a i {
         color: #2acb35; /* Ensure icons are light green on mobile */
     }
+
+
+    .footer-social-links {
+        display: flex; /* Use flexbox for alignment */
+        justify-content: flex-start; /* Align items to the left */
+        padding: 0; /* Remove padding if necessary */
+        margin: 0; /* Remove margin if necessary */
+    }
+
+    .footer-social-links li {
+        margin-right: 10px; /* Space between icons */
+    }
+
+
 }
-
-
 
 
 
