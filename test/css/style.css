@@ -544,7 +544,7 @@ select:focus {
     left: 0;
     width: 0%;
     height: 3px;
-    background: #2acb35;
+    /* background: #2acb35; */
     content: "";
     transition:all 500ms ease;
 	-moz-transition:all 500ms ease;
@@ -1737,7 +1737,7 @@ select:focus {
 
 .footer-area {
     background: #222426; /* Keep the background color */
-    padding: 11px 15px; /* Reduced vertical padding and added horizontal padding */
+    padding: 11.5px 15px; /* Reduced vertical padding and added horizontal padding */
     position: relative;
     margin: 0; /* Ensure no extra margin is applied */
     box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow for depth */
@@ -2290,7 +2290,7 @@ select:focus {
     padding-bottom: 150px; 
     position: relative;
     z-index: 1;
-    height: 480px; 
+    height: 550px; 
 }
 
 .breadcrumb-area .breadcrumbs {}
@@ -2299,7 +2299,7 @@ select:focus {
     color: #ffffff;
     font-size: 48px;
     font-weight: 700;
-    line-height: 150px;
+    line-height: 200px;
     text-transform: capitalize;
     text-align: center;
     margin: 0; 
@@ -5790,7 +5790,7 @@ select:focus {
 
 
 /* instagram video box css */
-.instagram-video-box {
+/* .instagram-video-box {
     max-width: 500px;
     width: 100%;
     margin: 0 auto;
@@ -5808,11 +5808,50 @@ select:focus {
     align-items: center;
 }
 
+
+@media screen and (max-width: 768px) {
+    .instagram-video-box {
+        max-width: 90%;
+        padding: 8px;
+    }
+} */
+
+.instagram-video-box {
+    max-width: 500px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex; /* Added for flexbox */
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+}
+
+.instagram-video-box blockquote {
+    width: 100%;
+    margin: 0; /* Removed auto margin for blockquote */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /* Responsive Design */
 @media screen and (max-width: 768px) {
     .instagram-video-box {
         max-width: 90%;
         padding: 8px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .instagram-video-box {
+        padding: 5px; /* Further reduce padding on smaller screens */
+    }
+
+    .instagram-video-box blockquote {
+        font-size: 14px; /* Adjust font size for better readability */
     }
 }
 
@@ -6308,7 +6347,7 @@ span {
 
 
 /* Register Now Button styles */
-.register-section {
+/* .register-section {
     position: fixed;
     bottom: 0;
     left: 0;
@@ -6317,7 +6356,7 @@ span {
     text-align: center;
     padding: 8px 0;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 9999; /* Ensures it stays on top */
+    z-index: 9999; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -6340,10 +6379,10 @@ span {
 .register-button:hover {
     background-color: #1ebe5d;
     transform: scale(1.05);
-}
+} */
 
 /* Improved Mobile Responsiveness */
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
     .register-button {
         padding: 14px 50px;
         font-size: 17px;
@@ -6357,12 +6396,12 @@ span {
     .register-button {
         padding: 12px 40px;
         font-size: 16px;
-        width: 95%; /* Allows better visibility */
+        width: 95%; 
     }
     .register-section {
         padding: 10px 0;
     }
-}
+} */
 
 
 /* pricing section css*/
@@ -6421,6 +6460,15 @@ span {
 
 .pricing-box h3 {
     margin: 0 0 10px;
+}
+
+.pricing-box p {
+    font-weight: bolder;
+    font-size: x-large;
+}
+
+.pricing-box ul li {
+    font-weight: bold;
 }
 
 .pricing-box ul {
@@ -6504,7 +6552,7 @@ span {
 }
 
 .panel-title a:hover {
-    color: #007bff; /* Change color on hover */
+    color: #32CD32; /* Change color on hover */
 }
 
 .panel-body {
