@@ -872,6 +872,7 @@ select:focus {
 =============================================
 ***/
 .rev_slider_wrapper {
+    
 }
 .rev_slider_wrapper .slide-content-box h2 {
     color: #e9d80c;
@@ -973,7 +974,6 @@ select:focus {
     left: 0;
     right: 0;
     bottom: 0;
-    /*background: rgba(34, 36, 38, 0.40);*/
     z-index: 9;
 }
 
