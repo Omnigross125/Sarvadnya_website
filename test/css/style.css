@@ -6497,6 +6497,7 @@ span {
 }
 
 /* Responsive styles */
+/* Responsive styles */
 @media only screen and (max-width: 768px) {
     .pricing-container {
         flex-direction: column; /* Stack pricing boxes vertically */
@@ -6509,9 +6510,16 @@ span {
         margin-bottom: 20px; /* Space between boxes */
     }
 
+    .toggle-buttons {
+        display: flex; /* Use flexbox for the toggle buttons */
+        justify-content: center; /* Center the buttons */
+        margin-bottom: 20px; /* Add some space below the buttons */
+    }
+
     .toggle-buttons button {
         font-size: 14px; /* Smaller font size for mobile */
         padding: 8px 16px; /* Adjust padding for mobile */
+        margin: 0 5px; /* Add some space between buttons */
     }
 }
 
