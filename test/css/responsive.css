@@ -736,7 +736,7 @@
 =============================================
 ***/ 
 .rev_slider_wrapper {
-    margin-top: 0;
+    /* margin-top: 0; */
 }    
 .rev_slider_wrapper .slide-content-box.mar-lft {
     margin-left: 50px !important; 
