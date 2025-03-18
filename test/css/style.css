@@ -121,10 +121,29 @@ a:focus {
     color: #fff;
 }
 
+/* logo image styles */
 img {
 	max-width: 100%;
     height: auto;
     
+}
+
+
+
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+    img {
+        width: 100px; /* Slightly increase size */
+        height: auto;
+    }
+}
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+    img {
+        width: 75px; /* Slightly increase size for smaller devices */
+        height: auto;
+    }
 }
 i {
 	font-style: normal;
@@ -480,7 +499,7 @@ select:focus {
 /*==============================================
     Mainmenu Area Css
 ===============================================*/
-.mainmenu-area {
+/* .mainmenu-area {
     position: fixed;
     width: 100%;
     z-index: 99;
@@ -490,10 +509,29 @@ select:focus {
 .mainmenu-area .logo {
     display: inline-block;
     padding-right: 60px;
-    /* padding-top: 26px; */
-    /* padding-bottom: 26px; */
+    padding-top: 26px;
+    padding-bottom: 26px;
     position: relative;
+} */
+
+.mainmenu-area {
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+    background: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    height: 82px; /* Adjust height as needed */
+    line-height: 60px; /* Align text vertically */
+    padding: 0; /* Remove extra padding */
 }
+
+.mainmenu-area .logo {
+    display: inline-block;
+    padding: 0; /* Remove padding */
+    height: 100%; /* Ensure it fills the parent height */
+    vertical-align: middle; /* Align properly */
+}
+
 .mainmenu-area .logo .smile {
     position: absolute;
     bottom: -25px;
@@ -524,11 +562,11 @@ select:focus {
 .main-menu .navigation li a {
     color: #404040;
     display: block;
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 700;
-    line-height: 20px;
+    line-height: 12px;
     opacity: 1;
-    padding: 41px 24px 39px;
+    padding: 41px 25px 29px;
     position: relative;
     text-transform: uppercase;
     transition: all 500ms ease 0s;
@@ -633,7 +671,7 @@ select:focus {
 .main-menu .navbar-collapse > ul li.dropdown .dropdown-btn {
   position: absolute;
   right: 10px;
-  top: 6px;
+  top: 10px;
   width: 34px;
   height: 30px;
   border: 1px solid #ffffff;
@@ -2329,8 +2367,8 @@ select:focus {
     padding-bottom: 150px; 
     position: relative;
     z-index: 1;
-    height: 550px; 
-    margin-top: 100px; /* Add margin to separate from fixed navbar */
+    height: 570px; 
+    margin-top: 83px; /* Add margin to separate from fixed navbar */
 }
 
 .breadcrumb-area .breadcrumbs {}

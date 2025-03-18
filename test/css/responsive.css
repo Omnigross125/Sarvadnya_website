@@ -699,8 +699,8 @@
 }
 .main-menu .navbar-collapse > .navigation > li > a,
 .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
-    padding:10px 10px !important;
-    line-height:22px;
+    padding:19px 25px !important;
+    line-height:25px;
     color:#222222;
     background:#2acb35;
     text-align:left;
@@ -735,8 +735,9 @@
     Rev slider wrapper style
 =============================================
 ***/ 
+
 .rev_slider_wrapper {
-    /* margin-top: 0; */
+    margin-top: 8vh;
 }    
 .rev_slider_wrapper .slide-content-box.mar-lft {
     margin-left: 50px !important; 
