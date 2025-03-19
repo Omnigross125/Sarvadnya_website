@@ -619,14 +619,14 @@
 .main-menu .navbar-header .navbar-toggle {
     display: inline-block;
     z-index: 7;
-    border: 2px solid #2ecc39;
+    border: 2px solid #404040;
     float: none;
     margin: 24px 0;
     border-radius: 0;
     padding: 10px 9px;
 }
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-    background: #2ecc39 none repeat scroll 0 0;
+    background: #404040 none repeat scroll 0 0;
     font-weight: 700;
 } 
     
