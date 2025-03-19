@@ -91,7 +91,7 @@ body {
 button:focus{
   outline: none;
 }
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h4, h6 {
     font-family: 'Poppins', sans-serif;
     color: #404040;
     margin: 0;
@@ -127,24 +127,100 @@ img {
     height: auto;
     
 }
+.logo {
+    display: flex; 
+    align-items: center;  
+    gap: 10px; 
+}
 
+.logo img {
+    height: 50px;
+    margin-top: 17px; 
+}
+
+.logo-text {
+    font-size: 17px;
+    font-weight: bold;
+    color: #404040;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+.logo-text-sub{
+    font-size: 13px;
+    font-weight: normal;
+    color: #404040; 
+    margin-left: 67px;
+    margin-top: -20px;
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+}
+.logo-text-sub h5{
+    margin-top: 10px;
+    
+ 
+}
 
 
 /* Adjust image size for smaller screens */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     img {
-        width: 100px; /* Slightly increase size */
+        width: 100px;
         height: auto;
+    }
+} */
+
+/* Further adjustments for very small screens */
+/* @media (max-width: 480px) {
+    img {
+        width: 60px; 
+        height: auto;
+    }
+} */
+
+/* Adjust image size for smaller screens */
+@media (max-width: 768px) {
+    .logo img {
+        width: 80px; /* Adjusted size for better fit */
+        height: auto;
+        margin-top: 10px; /* Adjust margin for better spacing */
+    }
+    .logo-text {
+        font-size: 15px; /* Slightly smaller font size */
+        margin-bottom: 5px; /* Adjusted margin for better spacing */
+    }
+    .logo-text-sub {
+        font-size: 12px; /* Slightly smaller font size */
+        margin-left: 63px; /* Adjust this value manually as needed */
+        margin-top: -20px; /* Reset margin for better alignment */
+        display: block; /* Ensure it takes full width */
+        text-align: left; /* Align text to the left */
     }
 }
 
 /* Further adjustments for very small screens */
 @media (max-width: 480px) {
-    img {
-        width: 75px; /* Slightly increase size for smaller devices */
+    .logo img {
+        width: 60px; /* Adjusted size for smaller devices */
         height: auto;
+        margin-top: 15px; /* Further adjust margin */
+    }
+    .logo-text {
+        font-size: 14px; /* Further reduced font size */
+        margin-bottom: 3px; /* Further adjusted margin */
+    }
+    .logo-text-sub {
+        font-size: 11px; /* Further reduced font size */
+        margin-left: 64px; /* Adjust this value manually as needed */
+        margin-top: -20px; /* Reset margin for better alignment */
+        display: block; /* Ensure it takes full width */
+        text-align: left; /* Align text to the left */
     }
 }
+
+
+
+
 i {
 	font-style: normal;
 }
@@ -548,11 +624,14 @@ select:focus {
     position: relative;
 }
 .main-menu .navbar-collapse {
-    padding: 0px
+    padding: 0px;
+    margin-left: 110px;
 }
 .main-menu .navigation {
     float: left;
-    margin: 0;
+    /* margin: 0; */
+    margin-left: 260px; /* Adjust as needed */
+    margin-top: -72px;
     position: relative;
 }
 .main-menu .navigation li {
@@ -566,7 +645,7 @@ select:focus {
     font-weight: 700;
     line-height: 12px;
     opacity: 1;
-    padding: 41px 25px 29px;
+    padding: 41px 20px 29px;
     position: relative;
     text-transform: uppercase;
     transition: all 500ms ease 0s;
@@ -798,6 +877,23 @@ select:focus {
 .mainmenu-area .appointment-button a:hover{
 
 }
+
+
+
+/* Responsive adjustments for smaller screens */
+/* @media (max-width: 768px) {
+    .logo-heading h2 {
+        font-size: 18px; 
+    }
+}
+
+@media (max-width: 480px) {
+    .logo-heading h2 {
+        font-size: 16px; 
+    }
+} */
+
+
 
 
 
