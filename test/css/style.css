@@ -140,7 +140,7 @@ img {
 
 .logo-text {
     font-size: 17px;
-    font-weight: bold;
+    font-weight: 600;
     color: #404040;
     margin-bottom: 10px;
     text-transform: uppercase;
@@ -1125,6 +1125,57 @@ select:focus {
         margin-top: 80px;
     }
 }
+
+
+
+/* youtube video container styles  */
+.video-section {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.video-container {
+    width: 380px;
+    height: 215px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+}
+
+/* Responsive Design for Tablets and Smaller Screens */
+@media (max-width: 768px) {
+    .video-container {
+        width: 90%; /* Make the videos take up more width on smaller screens */
+        height: 210px;
+    }
+}
+
+/* Responsive Design for Mobile Devices */
+@media (max-width: 480px) {
+    .video-section {
+        flex-direction: column; /* Stack videos vertically */
+        align-items: center; /* Center the videos */
+    }
+
+    .video-container {
+        width: 95%; /* Use almost full screen width */
+        height: 200px; /* Adjust height accordingly */
+    }
+}
+
+
+
 
 
 
@@ -6910,7 +6961,7 @@ body {
 .btn:hover {
     background: #3a5d47;
 }
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .contact-section {
         flex-direction: column;
         align-items: center;
@@ -6918,8 +6969,33 @@ body {
     .map-container, .contact-info {
         width: 90%;
     }
+} */
+
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 15px; /* Reduced side padding */
+    }
+
+    .map-container, 
+    .contact-info {
+        width: 100%; /* Full width on smaller screens */
+        max-width: 500px; /* Prevents excessive stretching on tablets */
+    }
 }
 
+@media (max-width: 480px) {
+    .contact-section {
+        padding: 20px 10px; /* Further reduce padding for smaller screens */
+    }
+
+    .map-container, 
+    .contact-info {
+        width: 100%; /* Fully occupies the screen width */
+        max-width: 100%; /* Ensures no extra space on sides */
+    }
+}
 
 
 

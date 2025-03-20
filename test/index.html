@@ -230,8 +230,8 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
 <section class="rev_slider_wrapper">
     <div id="slider1" class="rev_slider"  data-version="5.0">
         <ul>
-            <li data-transition="rs-20">
-                <img src="image/slide1.jpg"  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1">
+            <!-- <li data-transition="rs-20"> -->
+                <!-- <img src="image/slide1.jpg"  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1"> -->
                 
 
                 <!-- <div class="tp-caption tp-resizeme"
@@ -284,8 +284,8 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
 
 
             </li>
-            <li data-transition="fade">
-                <img src="image/slide2.jpg" alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+            <!-- <li data-transition="fade">
+                <img src="image/slide2.jpg" alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" > -->
                 
 
                 <!-- <div class="tp-caption tp-resizeme"
@@ -338,8 +338,8 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
 
 
             </li>
-            <li data-transition="fade">
-                <img src="image/slide3.jpg"  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" >
+            <!-- <li data-transition="fade">
+                <img src="image/slide3.jpg"  alt="" width="1920" height="700" data-bgposition="top center" data-bgfit="cover" data-bgrepeat="no-repeat" data-bgparallax="1" > -->
                 
 
                 <!-- <div class="tp-caption  tp-resizeme" 
@@ -746,7 +746,7 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
   
 <!--Start slogan area-->
 <style>
-table {
+/* table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
   width: 100%;
@@ -754,7 +754,7 @@ table {
 
 td, th {
   border: 1px solid #000;
-  text-align: left;
+  text-align: center;
   padding: 8px;
 }
 
@@ -774,7 +774,6 @@ td{
 	text-align:center;
 	padding:15px 0;
 	display:block;
-	
 	margin:20px 0;
 }
 .mytable a{
@@ -783,7 +782,126 @@ td{
 .footer-bord  p:last-child{
 	padding:20px 0;
 	border-bottom:2px solid #ffffff;
+} */
+
+/* Table Container */
+.table-wrapper {
+    width: 95%; /* Increased width to align with the video section */
+    max-width: 1220px; /* Ensures it doesn’t stretch too wide */
+    margin: 0 auto; /* Centers the table */
+    overflow-x: auto; /* Enables horizontal scroll on small screens */
+    padding: 20px;
 }
+
+/* Table Styling */
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 12px; /* Rounded edges */
+    overflow: hidden; /* Ensures border-radius applies */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Centers all table text */
+}
+
+/* Table Header */
+th {
+    background-color: #d32f2f; /* A deeper red for contrast */
+    color: #ffffff;
+    padding: 15px; /* Increased padding for more height */
+    text-transform: uppercase; /* Makes header text stand out */
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px; /* Slightly larger font */
+}
+
+/* Table Cells */
+td {
+    background-color: #f5f5f5;
+    padding: 12px; /* Increased padding for more height */
+    border: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
+    text-align: center;
+    font-size: 16px; /* Slightly larger text for prominence */
+}
+
+/* Row Hover Effect */
+tr:hover td {
+    background-color: #e0e0e0;
+}
+
+/* Alternate Row Styling */
+tr:nth-child(even) td {
+    background-color: #ebebeb;
+}
+
+/* Specific Colored Text */
+.td-color {
+    color: #0077cc;
+    font-weight: bold;
+}
+
+/* Table Title */
+.table-wrapper h2 {
+    color: #2acb35;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    margin: 20px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Links inside the table */
+.mytable a {
+    color: #0085BA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mytable a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Border */
+.footer-bord p:last-child {
+    padding: 20px 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .table-wrapper {
+        width: 100%;
+        padding: 5px;
+    }
+
+    table {
+        font-size: 14px;
+    }
+
+    td, th {
+        padding: 12px; /* Keeps height slightly increased on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .table-wrapper {
+        width: 95%; /* Keeps some space on the sides */
+        padding: 5px;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        font-size: 13px;
+    }
+
+    td, th {
+        padding: 10px;
+    }
+}
+ 
 </style>
 
 <div class="container table-wrapper">
@@ -799,13 +917,6 @@ td{
   </tr>
   <tr>
     <td>Yoga Trainer certificate course</td>
-    <td>15 March 2025</td>
-    <td>Offline & Online</td>
-    <!-- <td>25000</td> -->
-    <td style="text-align: center;"><a href="https://wa.link/hh551q">Register</a></td>
-  </tr>
-  <tr>
-    <td>Yoga Trainer certificate course</td>
     <td>1 April 2025</td>
     <td>Offline & Online</td>
     <!-- <td>25000</td> -->
@@ -813,32 +924,41 @@ td{
   </tr>
   <tr>
     <td>Yoga Trainer certificate course</td>
-     <td>15 April 2025</td>
+    <td>1 May 2025</td>
     <td>Offline & Online</td>
     <!-- <td>25000</td> -->
     <td style="text-align: center;"><a href="https://wa.link/hh551q">Register</a></td>
   </tr>
   <tr>
     <td>Yoga Trainer certificate course</td>
-   <td>1 May 2025</td>
+     <td>1 June 2025</td>
+    <td>Offline & Online</td>
+    <!-- <td>25000</td> -->
+    <td style="text-align: center;"><a href="https://wa.link/hh551q">Register</a></td>
+  </tr>
+  <tr>
+    <td>Yoga Trainer certificate course</td>
+   <td>1 July 2025</td>
     <td>Offline & Online</td>
     <!-- <td>25000</td> -->
     <td class="td-color" style="text-align: center;"><a href="https://wa.link/hh551q">Register</a></td>
   </tr>
   
 </table>
-
 </div>
-<section class="latest-blog-area sec-padding">
-    <div class="container">
 
-<iframe width="387" height="250" src="https://www.youtube.com/embed/BsjpAafqKQQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="387" height="250" src="https://www.youtube.com/embed/cqgwRKa-TBs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
-<iframe width="387" height="250" src="https://www.youtube.com/embed/OWYcaSurCkQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-</div>
+<section class="video-section">
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/BsjpAafqKQQ" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/_Lep9GAE_mc?si=KYIJoss94wnib-Ne" allowfullscreen></iframe>
+    </div>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/OWYcaSurCkQ" allowfullscreen></iframe>
+    </div>
 </section>
+
 
 <!-- <div class="container">
     <div class="sec-title text-center">
