@@ -2514,7 +2514,7 @@ select:focus {
     padding-bottom: 150px; 
     position: relative;
     z-index: 1;
-    height: 550px; 
+    height: 540px; 
     margin-top: 83px; /* Add margin to separate from fixed navbar */
 }
 
