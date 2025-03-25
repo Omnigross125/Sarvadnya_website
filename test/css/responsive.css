@@ -810,8 +810,8 @@
   margin-bottom: 40px;
 }        
 .single-blog-item {
-    min-height: 395px;
-    max-width: 300px;
+    min-height: 320px;
+    max-width: 360px;
     margin: 0 auto;
 }
 .single-blog-item .text-holder {
