@@ -615,7 +615,24 @@
     padding: 0;
     right:0px;
     z-index:12;
-}        
+}   
+
+/* New media query for smaller screens (max-width 480px) */
+@media (max-width: 480px) {
+    .main-menu .navbar-header {
+        text-align: center; /* Center the menu icon */
+        padding: 5px 0; /* Adjust padding */
+    }
+}
+
+/* Another media query for very small screens (max-width 360px) */
+@media (max-width: 360px) {
+    .main-menu .navbar-header {
+        text-align: center;
+        padding: 3px 0; /* Further reduce padding */
+    }
+}
+
 .main-menu .navbar-header .navbar-toggle {
     display: inline-block;
     z-index: 7;
