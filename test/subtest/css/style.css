@@ -653,7 +653,7 @@ select:focus {
 }
 .main-menu .navigation > li:hover > a, 
 .main-menu .navigation > li.current > a {
-    color: #2acb35;
+    /* color: #2acb35; */
 }
 .main-menu .navigation > li.dropdown > a {}
 .main-menu .navigation > li.dropdown > a:after {}
@@ -686,7 +686,7 @@ select:focus {
     opacity: 0;
     z-index: 99;
     transition: all 500ms ease;
-    border-top: 3px solid #2acb35;
+    /* border-top: 3px solid; */
   
 }
 .main-menu .navigation > li:hover > ul {
@@ -698,7 +698,7 @@ select:focus {
     clear: both;
     width: 100%;
     position: relative;
-    border-bottom: 1px solid #f4f4f4;
+    /* border-bottom: 1px solid #f4f4f4; */
 }
 .main-menu .navigation > li > ul > li:last-child{
     border-bottom: 0px solid #f4f4f4;    
@@ -726,17 +726,17 @@ select:focus {
     top: 13px;
     font-size: 10px;
     color: #d6d6d6;
-    content: "\f192";
+    /* content: "\f192"; */
     font-family: FontAwesome;
     -webkit-transition: .5s ease;
     transition: .5s ease;
 }
 .main-menu .navigation > li > ul > li:hover > a {
-    color: #2acb35;
+    /* color: #2acb35; */
     background: #f7f7f7;
 }
 .main-menu .navigation > li > ul > li:hover > a:before{
-    color: #2acb35;    
+    /* color: #2acb35;     */
 }
 
 .main-menu .navigation > li > ul > li.dropdown > a:after{}
