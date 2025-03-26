@@ -664,7 +664,7 @@
 @media (max-width: 360px) {
     .main-menu .navbar-header .navbar-toggle {
         padding: 6px 5px; /* Further reduced padding */
-        margin: 18px 0;
+        margin: 25px 0;
         border: 1px solid #404040;
     }
     .main-menu .navbar-header .navbar-toggle .icon-bar {
