@@ -629,6 +629,32 @@
     background: #404040 none repeat scroll 0 0;
     font-weight: 700;
 } 
+
+/* New media query for smaller screens (max-width 480px) */
+@media (max-width: 480px) {
+    .main-menu .navbar-header .navbar-toggle {
+        padding: 8px 7px; /* Adjust button size */
+        margin: 20px 0; /* Reduce margin */
+        border: 1.5px solid #404040; /* Slightly thinner border */
+    }
+    .main-menu .navbar-header .navbar-toggle .icon-bar {
+        height: 2px; /* Thinner lines */
+        width: 22px; /* Slightly smaller width */
+    }
+}
+
+/* Another media query for very small screens (max-width 360px) */
+@media (max-width: 360px) {
+    .main-menu .navbar-header .navbar-toggle {
+        padding: 6px 5px; /* Further reduced padding */
+        margin: 18px 0;
+        border: 1px solid #404040;
+    }
+    .main-menu .navbar-header .navbar-toggle .icon-bar {
+        height: 1.8px;
+        width: 20px;
+    }
+}
     
 .main-menu .navbar-collapse > .navigation {
     background: #45c4e9;
