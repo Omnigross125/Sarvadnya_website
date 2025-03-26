@@ -218,6 +218,25 @@ img {
     }
 }
 
+/* New media query for even smaller screens (max-width: 360px)  */
+@media (max-width: 360px) {
+    .logo img {
+        width: 50px; /* Further reduced size for compact devices */
+        height: auto;
+        margin-top: 10px; /* Adjusted margin */
+    }
+    .logo-text {
+        font-size: 13px; /* Even smaller font size for readability */
+        margin-bottom: 2px; /* Adjusted margin */
+    }
+    .logo-text-sub {
+        font-size: 10px; /* Further reduced font size */
+        margin-left: 55px; /* Adjust for proper alignment */
+        margin-top: -15px; /* Adjust for better positioning */
+        display: block; /* Ensure proper layout */
+        text-align: left; /* Align text to the left */
+    }
+}
 
 
 
