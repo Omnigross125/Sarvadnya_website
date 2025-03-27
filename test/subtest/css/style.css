@@ -724,7 +724,7 @@ select:focus {
 }
 .main-menu .navigation > li > ul > li > a {
     width: 100%;
-    background: #ffffff;
+    background: #fbe5b1;
     padding: 13px 15px 11px 48px;
     color: #404040;
     font-size: 14px;
@@ -752,7 +752,7 @@ select:focus {
 }
 .main-menu .navigation > li > ul > li:hover > a {
     /* color: #2acb35; */
-    background: #f7f7f7;
+    background: #f9db91;
 }
 .main-menu .navigation > li > ul > li:hover > a:before{
     /* color: #2acb35;     */
@@ -6141,6 +6141,192 @@ select:focus {
         font-size: 14px; /* Adjust font size for better readability */
     }
 }
+
+
+/* yoga benifits section styles */
+.benefits-container {
+    width: 100%;
+    padding: 50px 5%;
+    background: linear-gradient(to bottom, #e6f7e6, #c8e6c9); 
+    text-align: center;
+}
+
+.benefits-container h2 {
+    font-size: 28px;
+    font-weight: bold;
+    color: #4c9444; 
+}
+
+.benefits-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 30px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    text-align: left;
+    padding: 15px;
+    color: #245c3a; 
+}
+
+.benefit-item img {
+    width: 30px;
+    height: 30px;
+}
+
+.benefit-item h3 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+    color: #3e8e41;
+}
+
+.benefit-item p {
+    margin: 5px 0 0;
+    font-size: 16px;
+    color: #245c3a;
+}
+
+.subscribe-btn {
+    margin-top: 10px;
+}
+
+.subscribe-btn button {
+    background-color: #7ccf8b; 
+    color: white;
+    border: none;
+    padding: 12px 50px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s;
+}
+
+.subscribe-btn button:hover {
+    background-color: #7ccf8b; 
+    transform: scale(1.05);
+}
+
+/* MEDIA QUERIES */
+
+/* Tablets (Stack benefits in single column) */
+@media (max-width: 768px) {
+    .benefits-grid {
+        grid-template-columns: 1fr; /* Stack items vertically */
+    }
+
+    .benefit-item {
+        flex-direction: row; /* Keep icon beside text */
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .benefit-item img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .benefit-item h3 {
+        font-size: 17px;
+    }
+
+    .benefit-item p {
+        font-size: 13px;
+    }
+
+    .subscribe-btn {
+        justify-content: center; /* Keep button centered */
+    }
+
+    .subscribe-btn button {
+        font-size: 15px;
+        padding: 10px 20px;
+        width: auto;
+        min-width: 160px;
+    }
+}
+
+/* Mobile Devices (480px and smaller) */
+@media (max-width: 480px) {
+    .benefits-grid {
+        display: flex;
+        flex-direction: column; /* Stack benefits */
+        gap: 15px;
+    }
+
+    .benefit-item {
+        flex-direction: row; /* Keep icon beside text */
+        align-items: flex-start;
+        text-align: left;
+        padding: 7px;
+    }
+
+    .benefit-item img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .benefit-item h3 {
+        font-size: 22px;
+    }
+
+    .benefit-item p {
+        font-size: 15px;
+    }
+
+    .subscribe-btn {
+        justify-content: center;
+    }
+
+    .subscribe-btn button {
+        font-size: 18px;
+        padding: 12px 15px;
+        min-width: 200px;
+    }
+}
+
+/* Smallest Screens (360px and below) */
+@media (max-width: 360px) {
+    .benefits-container {
+        padding: 20px 3%;
+    }
+
+    .benefits-container h2 {
+        font-size: 18px;
+    }
+
+    .benefit-item img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .benefit-item h3 {
+        font-size: 14px;
+    }
+
+    .benefit-item p {
+        font-size: 11px;
+    }
+
+    .subscribe-btn button {
+        font-size: 12px;
+        padding: 6px 12px;
+        min-width: 140px;
+    }
+}
+
+
+
+
 
 
 
