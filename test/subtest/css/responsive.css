@@ -730,7 +730,7 @@
 .main-menu .navbar-collapse > .navigation > li,
 .main-menu .navbar-collapse > .navigation > li > ul > li,
 .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li{
-    border-top: 1px solid #18ba23 !important;
+    /* border-top: 1px solid #18ba23 !important; */
     opacity:1 !important;
     top:0px !important;
     left:0px !important;
@@ -739,7 +739,7 @@
 .main-menu .navbar-collapse > .navigation > li:last-child,
 .main-menu .navbar-collapse > .navigation > li > ul > li:last-child,
 .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:last-child{
-    border-top: 1px solid #18ba23 !important;
+    /* border-top: 1px solid #18ba23 !important; */
 }
 .main-menu .navbar-collapse > .navigation > li > a,
 .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
@@ -772,6 +772,7 @@
 }        
 .main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
     display:block;
+    color:#fff !important;
 }     
     
 /*** 
