@@ -661,12 +661,12 @@ select:focus {
     color: #404040;
     display: block;
     font-size: 15px;
-    font-weight: 700;
+    font-weight: 600;
     line-height: 12px;
     opacity: 1;
     padding: 41px 20px 29px;
     position: relative;
-    text-transform: uppercase;
+    text-transform: none;
     transition: all 500ms ease 0s;
     font-family: 'Poppins', sans-serif;
 }
@@ -729,7 +729,7 @@ select:focus {
     color: #404040;
     font-size: 14px;
     font-weight: 400;
-    text-transform: uppercase;
+    text-transform: none;
     display: block;
     float: left;
     clear: both;
