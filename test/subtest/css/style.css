@@ -299,6 +299,25 @@ button{
     line-height: 36px;
     text-transform: uppercase;
     margin: 8px 0 14px;
+    margin-left: 470px;
+}
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .sec-title h1 {
+        font-size: 24px; /* Reduce font size */
+        line-height: 30px;
+        text-align: center; /* Center align */
+        margin-left: 0; /* Remove left margin */
+    }
+}
+
+@media (max-width: 480px) {
+    .sec-title h1 {
+        font-size: 30px; /* Further reduce font size */
+        line-height: 26px;
+        margin: 5px 0 10px;
+        text-align: center; /* Ensure it's centered */
+    }
 }
 .sec-title h3 {
     color: #2acb35;
@@ -7443,9 +7462,94 @@ body {
 
 
 /* =============================================
-   Online Yoga Classes
+   donate page styles
 ============================================= */
 
+/* Donate Section */
+.donate-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #f9f9f9; 
+}
+
+.section-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2d572c; /* Dark green for headings */
+}
+
+/* Grid Layout */
+.donate-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+/* Card Styling */
+.donate-card {
+    background: white;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: 0.3s;
+    border: 2px solid #7ac142; /* Light green border */
+}
+
+.donate-card:hover {
+    transform: scale(1.05);
+    border-color: #5ca332; /* Darker green on hover */
+}
+
+.donate-card img {
+    width: 100%;
+    border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.donate-card h3 {
+    font-size: 18px;
+    margin: 10px 0;
+    color: #2d572c; /* Dark green text */
+}
+
+.donate-card p {
+    font-size: 14px;
+    color: #5a8c5f; /* Medium green text */
+}
+
+/* Donate Button */
+.donate-btn {
+    background-color: #7ac142; /* Light green button */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.donate-btn:hover {
+    background-color: #5ca332; /* Dark green on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .donate-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .donate-grid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 
 
