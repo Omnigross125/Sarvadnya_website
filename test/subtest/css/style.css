@@ -299,7 +299,7 @@ button{
     line-height: 36px;
     text-transform: uppercase;
     margin: 8px 0 14px;
-    margin-left: 470px;
+    margin-left: 440px;
 }
 /* Responsive styles for smaller screens */
 @media (max-width: 768px) {
