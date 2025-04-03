@@ -2065,17 +2065,210 @@ select:focus {
     position: relative;
 } */
 
-.footer-area {
-    background: #222426; /* Keep the background color */
-    padding: 11.5px 15px; /* Reduced vertical padding and added horizontal padding */
+/* .footer-area {
+    background: #222426; 
+    padding: 11.5px 15px; 
     position: relative;
-    margin: 0; /* Ensure no extra margin is applied */
-    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5); /* Optional: Add a subtle shadow for depth */
-    color: #ffffff; /* Set text color for better readability */
-    font-size: 12.5px; /* Adjust font size for better appearance */
-    text-align: left; /* Left align text */
-    line-height: 2.5; /* Adjust line height for better spacing between lines */
+    margin: 0; 
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.5); 
+    color: #ffffff; 
+    font-size: 12.5px; 
+    text-align: left; 
+    line-height: 2.5; 
+} */
+ 
+/* start new footer style */
+.custom-footer {
+    background: #222426;
+    padding: 32px 0; /* Increased padding for more height */
+    min-height: 250px; /* Ensures a minimum height */
+    color: #ffffff;
+    font-size: 16px;
+    text-align: left;
+    box-shadow: 0px -5px 15px rgba(0, 0, 0, 0.5);
 }
+
+
+.custom-container {
+    width: 90%;
+    margin: auto;
+}
+
+.custom-footer-content {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: flex-start;
+}
+
+/* Logo and Social Media */
+.custom-footer-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.custom-footer-logo img {
+    max-width: 150px;
+    margin-bottom: 15px;
+}
+
+.custom-social-icons a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+/* Hover Effects - Change to Brand Colors */
+.custom-social-icons a:hover {
+    color: inherit; /* Prevent any unwanted color change */
+}
+
+.custom-social-icons a:hover i.fa-facebook { color: #1877F2; }   /* Facebook - Blue */
+.custom-social-icons a:hover i.fa-linkedin { color: #0077B5; }   /* LinkedIn - Blue */
+.custom-social-icons a:hover i.fa-youtube { color: #FF0000; }    /* YouTube - Red */
+.custom-social-icons a:hover i.fa-instagram { color: #E1306C; }  /* Instagram - Pink */
+.custom-social-icons a:hover i.fa-whatsapp { color: #25D366; }   /* WhatsApp - Green */
+
+/* Theme-based hover effect for social icons */
+/* .custom-social-icons a:hover {
+    color: #a8e063; 
+    transform: scale(1.1); 
+} */
+
+/* Footer Links */
+.custom-footer-links {
+    display: flex;
+    justify-content: space-between;
+    flex: 3;
+    gap: 25px;
+}
+
+.custom-footer-column {
+    flex: 1;
+}
+
+.custom-footer-title {
+    font-size: 18px; /* Increased heading size */
+    margin-bottom: 12px;
+    color: #a8e063; /* Light green heading color */
+}
+
+.custom-footer-list {
+    list-style: none;
+    padding: 0;
+}
+
+.custom-footer-list li {
+    margin-bottom: 10px;
+}
+
+/* Removed green hover effect from content links */
+.custom-footer-list li a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.custom-footer-list li a:hover {
+    opacity: 0.7; /* Subtle opacity change instead of color change */
+}
+
+/* Address */
+.custom-footer-text {
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+    /* Center Logo and Social Icons */
+    .custom-footer-logo {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .custom-footer-logo img {
+        max-width: 150px;
+        margin-bottom: 15px;
+    }
+
+    .custom-social-icons {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    /* Arrange Footer Columns in 2x2 Grid */
+    .custom-footer-links {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns */
+        gap: 20px;
+        text-align: left;
+    }
+
+    .custom-footer-column {
+        width: 100%;
+    }
+
+    /* Ensure Two Columns Stay Side by Side */
+    .custom-footer-content {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two columns side by side */
+        gap: 20px;
+    }
+
+    /* Make Sure This Layout Holds for All Small Screens */
+    @media (max-width: 500px) {
+        .custom-footer-content {
+            grid-template-columns: 1fr; /* Stack in very small screens */
+        }
+    }
+}
+/* Fix for Very Small Screens (360px) */
+@media (max-width: 360px) {
+    .custom-footer-logo img {
+        max-width: 120px; /* Reduce logo size */
+    }
+
+    .custom-social-icons a {
+        font-size: 18px; /* Adjust icon size */
+    }
+
+    .custom-footer-content {
+        grid-template-columns: 1fr; /* Stack columns fully */
+        text-align: center;
+    }
+
+    .custom-footer-links {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 768px) {
+    .custom-footer {
+        padding-bottom: 80px; /* Increased bottom padding */
+    }
+}
+
+/* Extra Space for Smaller Screens (500px and below) */
+@media (max-width: 500px) {
+    .custom-footer {
+        padding-bottom: 150px; /* Even more space for small screens */
+    }
+}
+
+/* Extra Space for Very Small Screens (360px and below) */
+@media (max-width: 360px) {
+    .custom-footer {
+        padding-bottom: 120px; /* Maximum space for tiny screens */
+    }
+}
+
+
+
+
+/* End new footer style */
 .single-footer-widget {
     position: relative;
     overflow: hidden;
@@ -7554,147 +7747,94 @@ body {
 
 /* UPDATED ABOUT US STYLES */
 /* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* White Background */
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Us Section */
 .about-us {
-    background: linear-gradient(to bottom, #e6f7e6, #c8e6c9);; /* Light Green Gradient */
-    padding: 60px 20px;
-    text-align: center;
-    color: #2e4d24; /* Deep Green */
+    padding: 60px 5%;
+    width: 100%;
 }
 
-/* Container */
-.about-container {
-    max-width: 900px;
-    margin: auto;
-    text-align: left;
-}
-
-/* Titles & Headings */
+/* Headings */
 .about-title {
-    font-size: 42px;
-    font-weight: bold;
-    color: #2e7d32;
+    color: #3a7d44; /* Light Green Theme */
+    font-size: 36px;
     text-align: center;
-    margin-bottom: 15px;
-    letter-spacing: 1px;
+    font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .about-heading {
+    color: #3a7d44; /* Light Green Theme */
     font-size: 28px;
-    color: #388e3c;
     font-weight: bold;
-    margin-top: 30px;
+    margin-top: 50px; /* Increased spacing from previous content */
+    margin-bottom: 20px;
 }
 
 /* Paragraphs */
 .about-text {
     font-size: 18px;
-    line-height: 1.6;
-    color: #2e4d24;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 20px; /* Better spacing between paragraphs */
 }
 
-/* Lists */
+/* List Styling */
 .about-list {
-    list-style-type: none;
-    padding: 0;
+    padding-left: 20px;
 }
 
 .about-list li {
     font-size: 18px;
-    padding: 5px 0;
+    line-height: 1.8;
+    margin-bottom: 15px; /* Better spacing between list items */
 }
 
 /* Join Button */
 .about-join-button {
     display: inline-block;
-    margin-top: 20px;
-    padding: 12px 25px;
-    background: #4caf50;
+    background-color: #3a7d44; /* Light Green Theme */
     color: white;
     text-decoration: none;
     font-size: 18px;
+    font-weight: bold;
+    padding: 12px 24px;
     border-radius: 5px;
-    transition: 0.3s;
+    margin-top: 30px; /* More spacing from previous content */
+    transition: background 0.3s;
 }
 
 .about-join-button:hover {
-    background: #388e3c;
+    background-color: #2e5d33; /* Darker Green on Hover */
 }
 
-
-.about-section {
-    background-color: #f9f9f9; /* Light background for contrast */
-    padding: 60px 20px;
-    color: #404040;
-}
-
-.about-container {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-}
-
-.about-heading {
-    font-size: 36px;
-    font-weight: 700;
-    text-align: center;
-    margin-bottom: 20px;
-    color: #2E7D32; /* Light green theme */
-}
-
-.about-subheading {
-    font-size: 28px;
-    font-weight: 600;
-    margin-top: 30px;
-    margin-bottom: 15px;
-    color: #388E3C;
-}
-
-.about-container p {
-    font-size: 18px;
-    line-height: 1.6;
-    margin-bottom: 15px;
-    text-align: justify;
-}
-
-.about-list {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.about-list li {
-    font-size: 18px;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    position: relative;
-}
-
-.about-list li::before {
-    content: "✔";
-    position: absolute;
-    left: 0;
-    color: #388E3C;
-    font-weight: bold;
-}
-
-/* Media Queries for Mobile */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .about-container {
-        padding: 15px;
+    .about-us {
+        padding: 30px 10px;
     }
 
-    .about-heading {
+    .about-title {
         font-size: 28px;
     }
 
-    .about-subheading {
+    .about-heading {
         font-size: 24px;
+        margin-top: 40px;
     }
 
-    .about-container p,
-    .about-list li {
+    .about-text, .about-list li {
         font-size: 16px;
     }
 }
+
 
 
 /* TEMPLE SECTION STYLES */
