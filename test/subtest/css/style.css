@@ -7552,7 +7552,7 @@ body {
 }
 
 
-/* UPDATED ABOU US STYLES */
+/* UPDATED ABOUT US STYLES */
 /* General Styling */
 .about-us {
     background: linear-gradient(to bottom, #e6f7e6, #c8e6c9);; /* Light Green Gradient */
@@ -7695,6 +7695,71 @@ body {
         font-size: 16px;
     }
 }
+
+
+/* TEMPLE SECTION STYLES */
+/* Schedule Section Styling */
+.schedule-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+/* Title Styling */
+.schedule-title {
+    font-size: 28px;
+    color: #2c5e32;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Table Container */
+.schedule-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Table Styling */
+.schedule-table {
+    width: 90%;
+    max-width: 800px;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Table Head Styling */
+.schedule-table thead {
+    background-color: #2c5e32;
+    color: white;
+    font-size: 18px;
+}
+
+.schedule-table th, .schedule-table td {
+    padding: 15px;
+    text-align: center;
+    font-weight: 500;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Alternate Row Colors */
+.schedule-table tbody tr:nth-child(odd) {
+    background-color: #f0f9f2;  /* Light green */
+}
+
+.schedule-table tbody tr:nth-child(even) {
+    background-color: white;
+}
+
+/* Hover Effect on All Rows */
+.schedule-table tbody tr:hover {
+    background-color: #d8f3dc;  /* Slightly darker green on hover */
+    transition: background-color 0.3s ease-in-out;
+}
+
 
 
 
