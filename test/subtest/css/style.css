@@ -8126,7 +8126,165 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 /* END MOBILE MENU STYLES */
 
+/* START EVENTS STYLES */
+/* Events Section */
+.events-section {
+    width: 90%;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0;
+}
 
+/* Title */
+.events-title {
+    font-size: 32px;
+    color: #2e7d32; /* Vibrant Dark Green */
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Event Container */
+.event {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e6f9ea; /* Vibrant Light Green Background */
+    padding: 18px;
+    border-radius: 10px;
+    margin-bottom: 18px;
+    box-shadow: 0px 4px 12px rgba(0, 128, 0, 0.1);
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+/* Hover Effect */
+.event:hover {
+    background-color: #d0f0d8; /* Slightly deeper light green on hover */
+    box-shadow: 0px 6px 14px rgba(0, 128, 0, 0.15);
+    transform: translateY(-3px);
+}
+
+/* Featured Event */
+.event.featured {
+    background-color: #66bb6a; /* Fresh Green */
+    color: white;
+}
+
+/* Event Date */
+.event-date {
+    background: white;
+    padding: 10px 15px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 8px;
+    color: #2e7d32;
+}
+
+/* Event Details */
+.event-details h2 {
+    font-size: 18px;
+    margin: 0;
+    color: #2e7d32;
+}
+
+.featured .event-details h2 {
+    color: white;
+}
+
+/* Register Button */
+.register-btn {
+    background-color: #43a047; /* Vibrant Green */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.register-btn:hover {
+    background-color: #388e3c;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .event {
+        flex-direction: column;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .event-date {
+        margin-bottom: 10px;
+    }
+
+    .register-btn {
+        margin-top: 10px;
+        width: 100%;
+    }
+}
+
+/* ---------------- MEDIA QUERIES ---------------- */
+
+@media screen and (max-width: 768px) {
+    .events-section {
+      padding: 40px 15px;
+    }
+  
+    .event {
+      padding: 16px;
+    }
+  
+    .event-details h2 {
+      font-size: 18px;
+    }
+  
+    .event-date {
+      padding: 8px 12px;
+    }
+  
+    .event-date .day {
+      font-size: 18px;
+    }
+  
+    .event-date .month {
+      font-size: 13px;
+    }
+  
+    .event-details p {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .events-section h1 {
+      font-size: 26px;
+    }
+  
+    .events-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .event-date {
+      float: none;
+      margin: 0 0 10px 0;
+      display: inline-block;
+    }
+  
+    .event {
+      text-align: center;
+    }
+  
+    .event-details h2 {
+      font-size: 17px;
+    }
+  
+    .event-details p {
+      font-size: 13.5px;
+    }
+  }
+/* END EVENTS STYLES */
 
 
 
