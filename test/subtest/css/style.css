@@ -397,6 +397,8 @@ button{
     -webkit-animation-timing-function: ease-out;
           animation-timing-function: ease-out; */
 }
+
+
 .mainmenu-area.stricky-fixed .logo .smile{
     display: none;
 }
@@ -7756,14 +7758,14 @@ body {
 }
 
 /* About Us Section */
-.about-us {
+/* .about-us {
     padding: 60px 5%;
     width: 100%;
 }
 
-/* Headings */
+
 .about-title {
-    color: #3a7d44; /* Light Green Theme */
+    color: #3a7d44; 
     font-size: 36px;
     text-align: center;
     font-weight: bold;
@@ -7771,22 +7773,22 @@ body {
 }
 
 .about-heading {
-    color: #3a7d44; /* Light Green Theme */
+    color: #3a7d44; 
     font-size: 28px;
     font-weight: bold;
-    margin-top: 50px; /* Increased spacing from previous content */
+    margin-top: 50px; 
     margin-bottom: 20px;
 }
 
-/* Paragraphs */
+
 .about-text {
     font-size: 18px;
     line-height: 1.8;
     text-align: justify;
-    margin-bottom: 20px; /* Better spacing between paragraphs */
+    margin-bottom: 20px; 
 }
 
-/* List Styling */
+
 .about-list {
     padding-left: 20px;
 }
@@ -7794,28 +7796,27 @@ body {
 .about-list li {
     font-size: 18px;
     line-height: 1.8;
-    margin-bottom: 15px; /* Better spacing between list items */
+    margin-bottom: 15px; 
 }
 
-/* Join Button */
 .about-join-button {
     display: inline-block;
-    background-color: #3a7d44; /* Light Green Theme */
+    background-color: #3a7d44; 
     color: white;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
     padding: 12px 24px;
     border-radius: 5px;
-    margin-top: 30px; /* More spacing from previous content */
+    margin-top: 30px; 
     transition: background 0.3s;
 }
 
 .about-join-button:hover {
-    background-color: #2e5d33; /* Darker Green on Hover */
+    background-color: #2e5d33; 
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
     .about-us {
         padding: 30px 10px;
@@ -7832,6 +7833,103 @@ body {
 
     .about-text, .about-list li {
         font-size: 16px;
+    }
+} */
+
+/* General Styling */
+.about-us {
+    background: linear-gradient(to bottom, #e8f5e9, #f2fff2); /* Light Green Gradient */
+    padding: 60px 20px;
+    text-align: center;
+    color: #2e4d24; /* Deep Green */
+}
+
+/* Container */
+.about-container {
+    max-width: 900px;
+    margin: auto;
+    text-align: left;
+}
+
+/* Titles & Headings */
+.about-title {
+    font-size: 42px;
+    font-weight: bold;
+    color: #2e7d32;
+    text-align: center;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.about-heading {
+    font-size: 28px;
+    color: #388e3c;
+    font-weight: bold;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+/* Paragraphs */
+.about-text {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #2e4d24;
+}
+
+/* Lists */
+.about-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Join Button */
+.about-join-button {
+    display: inline-block;
+    width: 21%;
+    margin-top: 40px;
+    margin-left: 350px;
+    padding: 12px 58px;
+    background: #4caf50;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.about-join-button:hover {
+    background: #388e3c;
+}
+
+/* Responsive styles for tablets and smaller devices (768px and below) */
+@media (max-width: 768px) {
+    .about-join-button {
+        margin-left: 0;  
+        display: block;  
+        text-align: center;  
+        width: fit-content;  
+        margin: 20px auto;  
+        padding: 10px 20px;  
+        font-size: 16px;  
+    }
+}
+
+/* Further adjustments for very small screens (480px and below) */
+@media (max-width: 480px) {
+    .about-join-button {
+        width: 70%;  /* Make button take up more space */
+        padding: 12px;  
+        font-size: 20px;  
+        margin: 15px auto;  
+        margin-top: 35px;
+        margin-bottom: -10px;
+        text-align: center;  
     }
 }
 
@@ -7902,7 +8000,131 @@ body {
 
 
 
+/* START MOBILE MENU STYLES */
+/* ========== SLIDE-IN SIDEBAR MENU (THEMED) ========== */
+.mobile-offcanvas {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(135deg, #a2e6a6, #68c47e); /* a bit darker than the light green */
+    z-index: 9999;
+    transition: right 0.4s ease-in-out;
+    overflow-y: auto;
+    padding: 80px 20px 40px;
+    box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Poppins', sans-serif;
+    padding-bottom: 80px; /* Adjust as needed */
+    overflow-y: auto; /* Ensures scrolling if content exceeds height */
+}
 
+/* Open state */
+.mobile-offcanvas.open {
+    right: 0;
+}
+
+/* Close (X) Button */
+.offcanvas-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    cursor: pointer;
+    color: #1a1a1a;
+    font-weight: bold;
+    z-index: 10000;
+    transition: color 0.3s ease;
+}
+.offcanvas-close:hover {
+    color: #2acb35;
+}
+
+/* Navigation Styling */
+.mobile-offcanvas .navigation {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.mobile-offcanvas .navigation > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: #1a1a1a;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: #eafff1;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: background 0.3s ease;
+    text-decoration: none;
+}
+.mobile-offcanvas .navigation > li > a:hover {
+    background-color: #c4f6dc;
+}
+
+/* Dropdown Arrows */
+.mobile-offcanvas .navigation li.dropdown > a::after {
+    content: "›";
+    float: right;
+    font-weight: bold;
+    color: #2acb35;
+    transition: transform 0.3s ease;
+}
+.mobile-offcanvas .navigation li.dropdown.open > a::after {
+    content: "⌄";
+}
+
+/* Submenus */
+.mobile-offcanvas .navigation li.dropdown ul {
+    display: none;
+    margin-top: 8px;
+    padding-left: 15px;
+}
+
+.mobile-offcanvas .navigation li.dropdown.open > ul {
+    display: block;
+}
+
+/* Submenu Links */
+.mobile-offcanvas .navigation li.dropdown ul li a {
+    display: block;
+    padding: 12px 18px;
+    background-color: #ecfff5;
+    font-size: 15px;
+    font-weight: 500;
+    color: #222;
+    border-left: 2px solid #2acb35;
+    border-radius: 4px;
+    margin-bottom: 6px;
+}
+.mobile-offcanvas .navigation li.dropdown ul li a:hover {
+    background-color: #dafae8;
+}
+
+body.sidebar-open {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+}
+body.sidebar-open .mainmenu-area.stricky-fixed {
+    display: none !important; /* OR */
+    position: static !important; /* if you just want it to stay in flow */
+    z-index: 0;
+}
+body.sidebar-open {
+    overflow: hidden; /* Prevent background scroll */
+}
+
+body.sidebar-open .mainmenu-area.stricky-fixed {
+    display: none; /* Hide sticky menu while sidebar is open */
+}
+
+
+
+
+
+/* END MOBILE MENU STYLES */
 
 
 
