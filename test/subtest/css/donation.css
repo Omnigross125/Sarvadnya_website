@@ -27,7 +27,7 @@
   }
   
   .call-button a {
-    background-color: #4caf50;
+    background-color: #111;
     color: #fff;
     padding: 10px 15px;
     border-radius: 6px;
@@ -37,7 +37,7 @@
   }
   
   .call-button a:hover {
-    background-color: #4caf50;
+    background-color: #333;
   }
   
   
@@ -58,228 +58,276 @@
     color: #ffffff;
   }
   
-  /* Donation Section */
+  
+  body {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    color: #222;
+  }
+  
   .donation-section {
     padding: 40px 20px;
-    text-align: center;
-  }
-  
-  .donation-section h2 {
-    font-size: 28px;
-    margin-bottom: 30px;
-    color: #333;
-  }
-  
-  /* Layout Wrapper */
-  .donation-wrapper {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
-  }
-  
-  /* Cards */
-  .donation-cards {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    flex: 1;
-    min-width: 320px;
-    max-width: 500px;
-  }
-  
-  .card {
-    border: 2px solid #ccc;
-    padding: 25px 15px;
-    border-radius: 15px;
-    text-align: center;
-    transition: transform 0.3s ease;
-  }
-  
-  .card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .card h4 {
-    margin-bottom: 10px;
-    font-weight: bold;
-    font-size: 16px;
-  }
-  
-  .card h2 {
-    font-size: 28px;
-    margin-bottom: 15px;
-  }
-  
-  .card button {
-    background-color: #4caf50;
-    border: none;
-    padding: 10px 25px;
-    font-size: 16px;
-    font-weight: bold;
-    border-radius: 25px;
-    cursor: pointer;
-    color: #ffffff;
-    transition: background 0.3s ease;
-  }
-  
-  .card button:hover {
-    background-color: #388e3c;
-  }
-  
-  /* Bank Info */
-  .bank-info {
-    flex: 1;
-    min-width: 300px;
-    max-width: 500px;
-    text-align: left;
-    padding: 20px;
-    border-left: 4px solid #000;
-  }
-  
-  .bank-info h3 {
-    background-color: #4caf50;
-    color: #fff;
-    padding: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
-  }
-  
-  .bank-info p {
-    margin-bottom: 10px;
-    font-size: 15px;
-  }
-  
-  .bank-info hr {
-    margin: 15px 0;
-    border-color: #ccc;
-  }
-  
-  .highlight-orange {
-    color: #4caf50;
-  }
-  
-  /* Large Donations */
-  /* .large-donation-section {
-    padding: 30px 20px;
-    background-color: #fff;
-    margin-right: 325px;
-  }
-  
-  .large-donation-wrapper {
-    max-width: 700px;
+    max-width: 1200px;
     margin: auto;
-    border-left: 2px solid #000;
-    padding-left: 20px;
   }
   
-  .donation-row {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 18px;
-    font-size: 18px;
-    font-weight: bold;
-  }
-  
-  .meal {
-    flex: 1;
-  }
-  
-  .amount {
-    flex: 0 0 150px;
-    border-left: 2px solid #e2b437;
-    padding-left: 20px;
-  }
-  
-  .donation-row button {
-    background-color: #4caf50;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .donation-row button:hover {
-    background-color: #333;
-  } */
-  .large-donation-section {
-    background-color: #f6fff6;
-    padding: 60px 20px;
+  h1 {
     text-align: center;
-  }
-  
-  .large-donation-heading h2 {
-    font-size: 28px;
-    color: #333;
-    margin-bottom: 10px;
-  }
-  
-  .large-donation-heading p {
-    color: #555;
-    font-size: 16px;
+    font-size: 2.2rem;
     margin-bottom: 40px;
   }
   
-  .large-donation-list {
-    max-width: 800px;
-    margin: 0 auto;
+  .donation-container {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
     gap: 20px;
+    justify-content: space-between;
+  }
+  
+  .meal-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    flex: 1;
+  }
+  
+  .card {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  .card h3 {
+    font-size: 1rem;
+    margin-bottom: 10px;
+  }
+  
+  .card .price {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .yellow-btn {
+    background: #000;               /* changed from yellow to black */
+    border: none;
+    padding: 10px 20px;
+    color: #fff;                    /* white text for contrast */
+    border-radius: 25px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .yellow-btn:hover {
+    background-color: #222;         /* slightly lighter black */
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  
+  .bank-info {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .bank-header {
+    background: #111;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: fit-content;
+  }
+  
+  .bank-info p {
+    margin: 10px 0;
+    line-height: 1.5;
+  }
+  
+  .copy-btn {
+    background: #eee;
+    font-size: 0.8rem;
+    padding: 2px 6px;
+    margin-left: 6px;
+    cursor: pointer;
+    border-radius: 4px;
+    color: #333;
+  }
+  
+  .note.orange {
+    color: #f15b2a;
+    font-size: 0.95rem;
+  }
+  
+  .donation-table {
+    margin-top: 40px;
+    display: grid;
+    gap: 0px;
   }
   
   .donation-row {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background: #ffffff;
-    border: 1px solid #d6efd8;
-    border-radius: 10px;
-    padding: 15px 25px;
-    box-shadow: 0 2px 8px rgba(0, 128, 0, 0.1);
-    transition: transform 0.3s ease;
+    justify-content: flex-start; 
+    align-items: center;         
+    gap: 20px;                 
+    padding: 10px 0;
+    width: 100%;                 
   }
   
-  .donation-row:hover {
-    transform: translateY(-3px);
+  .donation-row span {
+    font-weight: normal;
+    min-width: 200px; 
+    color: #333;           
   }
   
-  .donation-row .meal {
-    font-size: 18px;
-    color: #2c662d;
+  .black-btn {
+    background: #111;
+    color: white;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 5px;
     font-weight: bold;
-    flex: 1;
-    text-align: left;
+    cursor: pointer;
+  }
+  .black-btn:hover {
+    background-color: #333;
+    
+  }
+
+  .donation-meals {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    color: #222;
   }
   
-  .donation-row .amount {
-    font-size: 18px;
-    color: #000;
-    font-weight: 500;
-    flex: 1;
+  .donation-amount {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    font-size: 20px;
+    color: #e0b032;
+  }
+  
+  /* Tablet and below */
+@media (max-width: 768px) {
+  .donation-container {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .meal-cards {
+    grid-template-columns: 1fr; /* Stack the cards */
+  }
+
+  .donation-row {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .donation-row span,
+  .donation-row .black-btn {
+    width: 100%;
+    margin-bottom: 8px;
+  }
+
+  .black-btn {
     text-align: center;
   }
-  
-  .donation-row button {
-    background-color: #72bf82;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 25px;
+}
+
+/* Mobile screens (≤ 480px) */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .card {
+    padding: 16px;
+  }
+
+  .card h3 {
+    font-size: 0.95rem;
+  }
+
+  .card .price {
+    font-size: 1.4rem;
+  }
+
+  .bank-info {
+    font-size: 0.9rem;
+  }
+
+  .donation-meals {
+    font-size: 16px;
+  }
+
+  .donation-amount {
+    font-size: 18px;
+  }
+
+  .black-btn {
+    font-size: 0.95rem;
+    padding: 10px 14px;
+  }
+
+  .yellow-btn {
+    font-size: 0.95rem;
+    padding: 10px 16px;
+  }
+}
+
+/* Specific handling for ultra-small screens: 360px */
+@media (max-width: 360px) {
+  .card .price {
+    font-size: 1.2rem;
+  }
+
+  .donation-meals {
     font-size: 15px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-    flex: 1;
-    max-width: 160px;
   }
+
+  .donation-amount {
+    font-size: 17px;
+  }
+
+  .copy-btn {
+    font-size: 0.75rem;
+    padding: 2px 5px;
+  }
+}
+
+/* Even smaller: 320px */
+@media (max-width: 320px) {
+  .donation-row span {
+    font-size: 14px;
+  }
+
+  .black-btn,
+  .yellow-btn {
+    font-size: 0.85rem;
+    padding: 8px 12px;
+  }
+
+  .bank-header {
+    font-size: 0.9rem;
+    padding: 8px 10px;
+  }
+
+  h1 {
+    font-size: 1.4rem;
+  }
+}
+
   
-  .donation-row button:hover {
-    background-color: #5ea46b;
-  }
+  
+ 
+  
   
  /* Donations Section */
 .donations-section {
@@ -381,7 +429,7 @@
     }
 
     .donation-amount {
-        font-size: 14px;
+        font-size: 24px;
     }
 
     .donate-btn {
@@ -439,8 +487,8 @@
     }
   
     .bank-info {
-      border-left: none;
-      border-top: 4px solid #000;
+      /* border-left: none;
+      border-top: 4px solid #000; */
     }
   
     .donation-row {
@@ -456,7 +504,7 @@
   }
 
   /* Gallery Section */
-.gallery-section {
+/* .gallery-section {
     padding: 50px 20px;
     background-color: #f9f9f9;
     text-align: center;
@@ -486,7 +534,41 @@
   
   .gallery img:hover {
     transform: scale(1.05);
+  } */
+
+  .gallery-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
   }
+  
+  .gallery-section h2 {
+    font-size: 35px;
+    margin-bottom: 30px;
+    color: #333;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); /* Slightly bigger */
+    gap: 25px;
+    max-width: 1100px; /* Optional: slightly increase max width */
+    margin: auto;
+  }
+  
+  .gallery img {
+    width: 100%;
+    height: 220px; /* Fixed height for uniformity */
+    object-fit: cover; /* Ensures image fills the space nicely */
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.05);
+  }
+  
   
   /* Footer */
   .footer {
@@ -527,7 +609,7 @@
   }
   
   .donate-left p {
-    font-size: 18px;
+    font-size: 25px;
     color: #333;
     font-style: italic;
     margin-bottom: 20px;
@@ -540,7 +622,7 @@
   
   .donate-now-btn {
     display: inline-block;
-    background: #4caf50;
+    background: #111;
     color: #fff;
     padding: 12px 22px;
     border-radius: 5px;
@@ -550,13 +632,13 @@
   }
   
   .donate-now-btn:hover {
-    background-color: #388e3c;
+    background-color: #333;
   }
   
   .donate-center h3,
   .donate-right h3 {
     font-size: 20px;
-    background: #4caf50;
+    background: #111;
     color: #fff;
     padding: 10px;
     border-radius: 5px;
@@ -574,7 +656,54 @@
   }
   
   .upi-qr {
-    max-width: 300px;
+    max-width: 200px;
     margin-top: 10px;
     border: 1px solid #ccc;
   }
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+.donation-note {
+  background-color: #181412;
+  color: white;
+  text-align: center;
+  padding: 40px 15px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.donation-note p {
+  font-size: 1.6rem;
+  font-weight: 400;
+  font-style: italic;
+  margin: 0;
+  line-height: 1.6;
+  letter-spacing: 0.5px;
+}
+
+.donation-note a {
+  color: #4fa3f7;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.donation-note a:hover {
+  text-decoration: underline;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+.support-message {
+  background-color: #181412; /* Black background */
+  color: #ffffff;            /* White text */
+  text-align: center;
+  padding: 60px 20px;        /* Same vertical spacing as in image */
+  font-family: 'Poppins', sans-serif;
+}
+
+.support-message p {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin: 0;
+  line-height: 1.5;
+}
+
