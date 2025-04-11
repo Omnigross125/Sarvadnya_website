@@ -7872,7 +7872,7 @@ body {
 
 /* Paragraphs */
 .about-text {
-    font-size: 18px;
+    font-size: 17px;
     line-height: 1.6;
     color: #2e4d24;
 }
@@ -7884,7 +7884,7 @@ body {
 }
 
 .about-list li {
-    font-size: 18px;
+    font-size: 17px;
     padding: 5px 0;
 }
 
@@ -8222,7 +8222,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     }
 
     .register-btn {
-        margin-top: 10px;
+        margin-top: 20px;
         width: 50%;
     }
 }
@@ -8280,6 +8280,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   
     .event-details h2 {
       font-size: 17px;
+      margin-top: 10px;
     }
   
     .event-details p {
