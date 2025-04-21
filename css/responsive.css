@@ -541,6 +541,7 @@
     padding-top: 19px;
     padding-bottom: 19px;
     padding-left: 0;
+    margin-top: -14px;
     z-index: 9999999;
 } 
 .mainmenu-area .logo .smile {
@@ -614,20 +615,63 @@
     padding: 0;
     right:0px;
     z-index:12;
-}        
+}   
+
+/* New media query for smaller screens (max-width 480px) */
+@media (max-width: 480px) {
+    .main-menu .navbar-header {
+        text-align: center; /* Center the menu icon */
+        padding: 5px 0; /* Adjust padding */
+    }
+}
+
+/* Another media query for very small screens (max-width 360px) */
+@media (max-width: 360px) {
+    .main-menu .navbar-header {
+        text-align: center;
+        padding: 3px 0; /* Further reduce padding */
+    }
+}
+
 .main-menu .navbar-header .navbar-toggle {
     display: inline-block;
     z-index: 7;
-    border: 2px solid #2ecc39;
+    border: 2px solid #404040;
     float: none;
     margin: 24px 0;
     border-radius: 0;
     padding: 10px 9px;
 }
 .main-menu .navbar-header .navbar-toggle .icon-bar {
-    background: #2ecc39 none repeat scroll 0 0;
+    background: #404040 none repeat scroll 0 0;
     font-weight: 700;
 } 
+
+/* New media query for smaller screens (max-width 480px) */
+@media (max-width: 480px) {
+    .main-menu .navbar-header .navbar-toggle {
+        padding: 8px 7px; /* Adjust button size */
+        margin: 20px 0; /* Reduce margin */
+        border: 1.5px solid #404040; /* Slightly thinner border */
+    }
+    .main-menu .navbar-header .navbar-toggle .icon-bar {
+        height: 2px; /* Thinner lines */
+        width: 22px; /* Slightly smaller width */
+    }
+}
+
+/* Another media query for very small screens (max-width 360px) */
+@media (max-width: 360px) {
+    .main-menu .navbar-header .navbar-toggle {
+        padding: 6px 5px; /* Further reduced padding */
+        margin: 25px 0;
+        border: 1px solid #404040;
+    }
+    .main-menu .navbar-header .navbar-toggle .icon-bar {
+        height: 1.8px;
+        width: 20px;
+    }
+}
     
 .main-menu .navbar-collapse > .navigation {
     background: #45c4e9;
@@ -686,7 +730,7 @@
 .main-menu .navbar-collapse > .navigation > li,
 .main-menu .navbar-collapse > .navigation > li > ul > li,
 .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li{
-    border-top: 1px solid #18ba23 !important;
+    /* border-top: 1px solid #18ba23 !important; */
     opacity:1 !important;
     top:0px !important;
     left:0px !important;
@@ -695,12 +739,12 @@
 .main-menu .navbar-collapse > .navigation > li:last-child,
 .main-menu .navbar-collapse > .navigation > li > ul > li:last-child,
 .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li:last-child{
-    border-top: 1px solid #18ba23 !important;
+    /* border-top: 1px solid #18ba23 !important; */
 }
 .main-menu .navbar-collapse > .navigation > li > a,
 .main-menu .navbar-collapse > .navigation > li > ul > li > ul > li > a{
-    padding:10px 10px !important;
-    line-height:22px;
+    padding:19px 25px !important;
+    line-height:25px;
     color:#222222;
     background:#2acb35;
     text-align:left;
@@ -728,6 +772,7 @@
 }        
 .main-menu .navbar-collapse > .navigation li.dropdown .dropdown-btn{
     display:block;
+    color:#fff !important;
 }     
     
 /*** 
@@ -735,8 +780,9 @@
     Rev slider wrapper style
 =============================================
 ***/ 
+
 .rev_slider_wrapper {
-    margin-top: 0;
+    margin-top: 9vh;
 }    
 .rev_slider_wrapper .slide-content-box.mar-lft {
     margin-left: 50px !important; 
@@ -744,6 +790,8 @@
 .tparrows {
     display: none;
 }
+
+
    
 /*** 
 =============================================
@@ -806,8 +854,8 @@
   margin-bottom: 40px;
 }        
 .single-blog-item {
-    min-height: 395px;
-    max-width: 300px;
+    min-height: 320px;
+    max-width: 360px;
     margin: 0 auto;
 }
 .single-blog-item .text-holder {
@@ -878,7 +926,7 @@
 =============================================
 ***/   
 .breadcrumb-area .breadcrumbs h1 {
-    line-height: 60px;
+    line-height: 120px;
 }        
 .breadcrumb-bottom-area .left {
     float: none !important;
