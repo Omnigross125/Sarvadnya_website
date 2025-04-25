@@ -8411,12 +8411,96 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     }
   }
   
+/* refund policy */
+.refund-section {
+    width: 100%;
+    padding: 60px 140px;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .refund-content h1 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .refund-content h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .refund-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .refund-content ul {
+    list-style-type: disc !important;
+    padding-left: 40px !important;
+    margin-bottom: 20px;
+  }
+  
+  .refund-content li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    display: list-item !important;
+    list-style-position: outside !important;
+  }
 
+  .refund-content a {
+    color: #0A66C2;
+    font-weight: 600;
 
-
-
-
-
+  }
+  
+  /* ✅ Responsive styles */
+  @media screen and (max-width: 768px) {
+    .refund-section {
+      padding: 40px 5vw;
+    }
+  
+    .refund-content h1 {
+      font-size: 28px;
+    }
+  
+    .refund-content h2 {
+      font-size: 24px;
+    }
+  
+    .refund-content p,
+    .refund-content li {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .refund-section {
+      padding: 30px 4vw;
+    }
+  
+    .refund-content h1 {
+      font-size: 24px;
+    }
+  
+    .refund-content h2 {
+      font-size: 20px;
+    }
+  
+    .refund-content p,
+    .refund-content li {
+      font-size: 15px;
+    }
+  }
+  
 
 
 /*** 
