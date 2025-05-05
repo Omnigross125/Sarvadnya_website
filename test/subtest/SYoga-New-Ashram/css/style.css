@@ -2134,6 +2134,7 @@ h2.policy-head, h3.policy-head {
     padding-bottom : 5px
   }
   .btn-donate {
+    margin-left: 85px;
     font-size : 15px
   }
   .donatefooter h5 {
