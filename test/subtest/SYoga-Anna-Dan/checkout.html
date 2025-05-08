@@ -244,14 +244,7 @@
           <div><strong>₹<span id="final-total">0.00</span></strong></div>
         </div>
         <hr>
-        <!-- <div class="summary-row">
-          <div>Subtotal</div>
-          <div>₹500,000.00</div>
-        </div>
-        <div class="summary-row">
-          <div><strong>Total</strong></div>
-          <div><strong>₹500,000.00</strong></div>
-        </div> -->
+
         <div class="summary-row">
           <div>Subtotal</div>
           <div>₹<span id="subtotal">0.00</span></div>
@@ -278,41 +271,7 @@
 </body>
 </html>
 
-<!-- <script>
-  function getQueryParam(param) {
-    const urlParams = new URLSearchParams(window.location.search);
-    return urlParams.get(param);
-  }
 
-  const amountFromUrl = getQueryParam('amount');
-
-  if (amountFromUrl) {
-    const amountNum = parseFloat(amountFromUrl);
-
-    let meals = '';
-    if (amountNum === 1000) meals = '50';
-    else if (amountNum === 2000) meals = '100';
-    else if (amountNum === 5000) meals = '250';
-    else if (amountNum === 10000) meals = '500';
-
-    const formattedAmount = amountNum.toLocaleString('en-IN', {
-      style: 'decimal',
-      minimumFractionDigits: 2,
-      maximumFractionDigits: 2
-    });
-
-    // Set donation description
-    const donationText = document.getElementById('donation-text');
-    if (donationText) {
-      donationText.textContent = `Sarvadnya Mission Charity Donation - ₹${amountNum} for ${meals} meals`;
-    }
-
-    // Set all amounts
-    document.getElementById('subtotal').textContent = formattedAmount;
-    document.getElementById('total').textContent = formattedAmount;
-    document.getElementById('final-total').textContent = formattedAmount;
-  }
-</script> -->
 <script>
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search);
