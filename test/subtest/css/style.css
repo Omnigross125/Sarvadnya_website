@@ -8295,7 +8295,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 34px;
+    gap: 32px;
     padding: 40px;
   }
   
