@@ -373,206 +373,259 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
 
 <!--Start slogan area-->
 <style>
-    /* table {
-      font-family: arial, sans-serif;
-      border-collapse: collapse;
-      width: 100%;
-    }
-    
-    td, th {
-      border: 1px solid #000;
-      text-align: center;
-      padding: 8px;
-    }
-    
-    th{
-      background-color: #fe0000;
-      color: #ffff;
-      }
-      
-    td{
-      background-color: #e2e2e2;
-    }  
-    .td-color{
-        color:blue;
-    }
-    .table-wrapper h2{
-        color:black;
-        text-align:center;
-        padding:15px 0;
-        display:block;
-        margin:20px 0;
-    }
-    .mytable a{
-        color:#0085BA;
-    }
-    .footer-bord  p:last-child{
-        padding:20px 0;
-        border-bottom:2px solid #ffffff;
-    } */
-    
-    /* Table Container */
+/* table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #000;
+  text-align: center;
+  padding: 8px;
+}
+
+th{
+  background-color: #fe0000;
+  color: #ffff;
+  }
+  
+td{
+  background-color: #e2e2e2;
+}  
+.td-color{
+	color:blue;
+}
+.table-wrapper h2{
+	color:black;
+	text-align:center;
+	padding:15px 0;
+	display:block;
+	margin:20px 0;
+}
+.mytable a{
+	color:#0085BA;
+}
+.footer-bord  p:last-child{
+	padding:20px 0;
+	border-bottom:2px solid #ffffff;
+} */
+
+/* Table Container */
+.table-wrapper {
+    width: 95%; /* Increased width to align with the video section */
+    max-width: 1220px; /* Ensures it doesn’t stretch too wide */
+    margin: 0 auto; /* Centers the table */
+    overflow-x: auto; /* Enables horizontal scroll on small screens */
+    padding: 20px;
+}
+
+/* Table Styling */
+table {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 12px; /* Rounded edges */
+    overflow: hidden; /* Ensures border-radius applies */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    text-align: center; /* Centers all table text */
+}
+
+/* Table Header */
+th {
+    background-color: #d32f2f; /* A deeper red for contrast */
+    color: #ffffff;
+    padding: 15px; /* Increased padding for more height */
+    text-transform: uppercase; /* Makes header text stand out */
+    font-weight: bold;
+    text-align: center;
+    font-size: 18px; /* Slightly larger font */
+}
+
+/* Table Cells */
+td {
+    background-color: #f5f5f5;
+    padding: 12px; /* Increased padding for more height */
+    border: 1px solid #ddd;
+    transition: background 0.3s ease-in-out;
+    text-align: center;
+    font-size: 16px; /* Slightly larger text for prominence */
+}
+
+/* Row Hover Effect */
+tr:hover td {
+    background-color: #e0e0e0;
+}
+
+/* Alternate Row Styling */
+tr:nth-child(even) td {
+    background-color: #ebebeb;
+}
+
+/* Specific Colored Text */
+.td-color {
+    color: #0077cc;
+    font-weight: bold;
+}
+
+/* Table Title */
+.table-wrapper h2 {
+    color: #2acb35;
+    text-align: center;
+    padding: 20px 0;
+    display: block;
+    margin: 20px 0;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+/* Links inside the table */
+.mytable a {
+    color: #0085BA;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.mytable a:hover {
+    text-decoration: underline;
+}
+
+/* Footer Border */
+.footer-bord p:last-child {
+    padding: 20px 0;
+    border-bottom: 2px solid #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
     .table-wrapper {
-        width: 95%; /* Increased width to align with the video section */
-        max-width: 1220px; /* Ensures it doesn’t stretch too wide */
-        margin: 0 auto; /* Centers the table */
-        overflow-x: auto; /* Enables horizontal scroll on small screens */
-        padding: 20px;
-    }
-    
-    /* Table Styling */
-    table {
-        font-family: Arial, sans-serif;
-        border-collapse: collapse;
         width: 100%;
-        border-radius: 12px; /* Rounded edges */
-        overflow: hidden; /* Ensures border-radius applies */
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-        text-align: center; /* Centers all table text */
+        padding: 5px;
     }
-    
-    /* Table Header */
-    th {
-        background-color: #d32f2f; /* A deeper red for contrast */
-        color: #ffffff;
-        padding: 15px; /* Increased padding for more height */
-        text-transform: uppercase; /* Makes header text stand out */
-        font-weight: bold;
-        text-align: center;
-        font-size: 18px; /* Slightly larger font */
+
+    table {
+        font-size: 14px;
     }
-    
-    /* Table Cells */
-    td {
-        background-color: #f5f5f5;
-        padding: 12px; /* Increased padding for more height */
-        border: 1px solid #ddd;
-        transition: background 0.3s ease-in-out;
-        text-align: center;
-        font-size: 16px; /* Slightly larger text for prominence */
+
+    td, th {
+        padding: 12px; /* Keeps height slightly increased on smaller screens */
     }
-    
-    /* Row Hover Effect */
-    tr:hover td {
-        background-color: #e0e0e0;
+}
+
+@media (max-width: 480px) {
+    .table-wrapper {
+        width: 88%; /* Keeps some space on the sides */
+        padding: 5px;
+        overflow-x: auto;
     }
-    
-    /* Alternate Row Styling */
-    tr:nth-child(even) td {
-        background-color: #ebebeb;
+
+    table {
+        width: 100%;
+        font-size: 13px;
     }
-    
-    /* Specific Colored Text */
-    .td-color {
-        color: #0077cc;
-        font-weight: bold;
+
+    td, th {
+        padding: 10px;
     }
-    
-    /* Table Title */
-    .table-wrapper h2 {
-        color: #2acb35;
-        text-align: center;
-        padding: 20px 0;
-        display: block;
-        margin: 20px 0;
-        font-size: 26px;
-        font-weight: bold;
+}
+@media (max-width: 360px) {
+    .table-wrapper {
+        width: 95%;
+        padding: 5px;
+        overflow-x: auto;
     }
-    
-    /* Links inside the table */
-    .mytable a {
-        color: #0085BA;
-        text-decoration: none;
-        font-weight: bold;
+
+    table {
+        width: 100%;
+        font-size: 12.5px;
     }
-    
-    .mytable a:hover {
-        text-decoration: underline;
+
+    td, th {
+        padding: 8px;
+        word-break: break-word; /* Break long content in cells */
     }
-    
-    /* Footer Border */
-    .footer-bord p:last-child {
-        padding: 20px 0;
-        border-bottom: 2px solid #ffffff;
+}
+@media (max-width: 355px) {
+    .table-wrapper {
+        width: 96%;
+        padding: 4px;
+        overflow-x: auto;
     }
-    
-    /* Responsive Design */
-    @media (max-width: 768px) {
-        .table-wrapper {
-            width: 100%;
-            padding: 5px;
-        }
-    
-        table {
-            font-size: 14px;
-        }
-    
-        td, th {
-            padding: 12px; /* Keeps height slightly increased on smaller screens */
-        }
+
+    table {
+        width: 100%;
+        font-size: 12.5px;
     }
-    
-    @media (max-width: 480px) {
-        .table-wrapper {
-            width: 88%; /* Keeps some space on the sides */
-            padding: 5px;
-            overflow-x: auto;
-        }
-    
-        table {
-            width: 100%;
-            font-size: 13px;
-        }
-    
-        td, th {
-            padding: 10px;
-        }
+
+    td, th {
+        padding: 8px;
+        font-size: 11.5px;
+        word-break: break-word;
     }
-     
-    </style>
+}
+
+@media (max-width: 350px) {
+    .table-wrapper {
+        width: 95%;
+        padding: 4px;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        font-size: 12px;
+    }
+
+    td, th {
+        padding: 7px;
+        font-size: 11px;
+        word-break: break-word;
+    }
+}
+</style>
+<div class="container table-wrapper">
+<h2>EXPLORE OUR YOGA PROGRAMMS</h2>
+<table class="mytable">
+  <tr>
+    <th>COURSE NAME</th>
+    <th>DATE</th>
+    <th>MODE</th>
+    <!-- <th>FEES</th> -->
+    <th>JOIN NOW</th>
     
-    <div class="container table-wrapper">
-    <h2>EXPLORE OUR YOGA PROGRAMMS</h2>
-    <table class="mytable">
-      <tr>
-        <th>COURSE NAME</th>
-        <th>DATE</th>
-        <th>MODE</th>
-        <!-- <th>FEES</th> -->
-        <th>REGISTER NOW</th>
-        
-      </tr>
-      <tr>
-        <td>Yoga Trainer certificate course</td>
-        <td>1 April 2025</td>
-        <td>Offline & Online</td>
-        <!-- <td>25000</td> -->
-        <td style="text-align: center;"><a href="https://wa.link/hh551q">Register</a></td>
-      </tr>
-      <tr>
-        <td>Yoga Trainer certificate course</td>
-        <td>1 May 2025</td>
-        <td>Offline & Online</td>
-        <!-- <td>25000</td> -->
-        <td style="text-align: center;"><a href="https://wa.link/hh551q">Register</a></td>
-      </tr>
-      <tr>
-        <td>Yoga Trainer certificate course</td>
-         <td>1 June 2025</td>
-        <td>Offline & Online</td>
-        <!-- <td>25000</td> -->
-        <td style="text-align: center;"><a href="https://wa.link/hh551q">Register</a></td>
-      </tr>
-      <tr>
-        <td>Yoga Trainer certificate course</td>
-       <td>1 July 2025</td>
-        <td>Offline & Online</td>
-        <!-- <td>25000</td> -->
-        <td class="td-color" style="text-align: center;"><a href="https://wa.link/hh551q">Register</a></td>
-      </tr>
-      
-    </table>
-    </div>
+  </tr>
+  <tr>
+    <td>Yoga Trainer certificate course</td>
+    <td>1 April 2025</td>
+    <td>Offline & Online</td>
+    <!-- <td>25000</td> -->
+    <td style="text-align: center;"><a href="https://wa.link/hh551q">Join</a></td>
+  </tr>
+  <tr>
+    <td>Yoga Trainer certificate course</td>
+    <td>1 May 2025</td>
+    <td>Offline & Online</td>
+    <!-- <td>25000</td> -->
+    <td style="text-align: center;"><a href="https://wa.link/hh551q">Join</a></td>
+  </tr>
+  <tr>
+    <td>Yoga Trainer certificate course</td>
+     <td>1 June 2025</td>
+    <td>Offline & Online</td>
+    <!-- <td>25000</td> -->
+    <td style="text-align: center;"><a href="https://wa.link/hh551q">Join</a></td>
+  </tr>
+  <tr>
+    <td>Yoga Trainer certificate course</td>
+   <td>1 July 2025</td>
+    <td>Offline & Online</td>
+    <!-- <td>25000</td> -->
+    <td class="td-color" style="text-align: center;"><a href="https://wa.link/hh551q">Join</a></td>
+  </tr>
+  
+</table>
+</div>
+
     
     <section class="video-section">
         <div class="video-container">
