@@ -2294,5 +2294,50 @@ h2.policy-head, h3.policy-head {
   }
 }
 
+@media (max-width: 360px) {
+    /* Reduce heading sizes */
+    .sec-head {
+        font-size: 0.95rem;
+    }
+
+    /* Adjust price text size */
+    .sec-head span {
+        font-size: 1rem;
+    }
+
+    /* Reduce padding in table cells */
+    .table td {
+        padding: 6px 4px;
+    }
+
+    /* Input field resizing */
+    .amount-input {
+        width: 100%;
+        padding: 6px;
+        font-size: 0.9rem;
+        box-sizing: border-box;
+    }
+
+    /* Make button text smaller and fit within cell */
+    .btn-sm {
+        font-size: 0.85rem;
+        padding: 6px 10px;
+        white-space: nowrap;
+    }
+
+    /* Prevent table from overflowing the screen */
+    .table {
+        width: 100%;
+        table-layout: fixed;
+        word-wrap: break-word;
+    }
+
+    /* Fix text breaking issues */
+    .table td h4,
+    .table td h3 {
+        word-break: break-word;
+        margin: 0;
+    }
+}
 
 
