@@ -8524,8 +8524,8 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 }
 
 .welcome-icon {
-  width: 100px;
-  margin: 20px 0;
+  width: 170px;
+  margin: -8px 0;
   opacity: 0.8;
 }
 
@@ -8615,12 +8615,12 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   }
 
   .donate-link {
-    font-size: small;
+    font-size: 18px;
     padding: 10px 16px;
   }
 
   .welcome-icon {
-    width: 100px;
+    width: 135px;
   }
 }
 
