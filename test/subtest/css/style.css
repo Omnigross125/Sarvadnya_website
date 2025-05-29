@@ -7510,6 +7510,12 @@ body {
         width: 95%; /* Fully occupies the screen width */
         max-width: 100%; /* Ensures no extra space on sides */
     }
+    .contact-info h2 {
+        text-align: center;
+    }
+    .btn {
+        margin-left: 100px;
+    }
 }
 
 
@@ -9239,7 +9245,6 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     padding: 20px 10px;
   }
 }
-
 @media (max-width: 760px) {
   .corporate-intro {
     padding: 40px 20px;
