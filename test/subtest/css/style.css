@@ -426,7 +426,7 @@ button{
 .scroll-to-top {
     background: transparent;
     border: 1px solid #2acb35;
-    bottom: 25px;
+    bottom: 75px;
     color: #2acb35;
     cursor: pointer;
     display: none;
@@ -7434,6 +7434,7 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: 55px;
 }
 .map-container:hover {
     transform: scale(1.05);
@@ -7444,7 +7445,7 @@ body {
     height: 100%; /* Adjusted to fit container */
     border: 0;
 }
-.contact-info {
+/* .contact-info {
     width: 45%;
     min-width: 300px;
     background: #e0f2e9;
@@ -7475,7 +7476,90 @@ body {
 }
 .btn:hover {
     background: #3a5d47;
+} */
+ .contact-info {
+  width: 100%;
+  max-width: 600px;
+  background: #e0f2e9;
+  padding: 25px 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: 'Poppins', sans-serif;
+  margin: 0 auto;
 }
+
+.contact-info h2 {
+  color: #4a7c59;
+  margin-bottom: 20px;
+  font-size: 30px;
+}
+
+.contact-info p{
+    font-size: 16px;
+}
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+}
+
+.contact-item .icon {
+  color: #4CAF50; /* Light green theme */
+  font-size: 18px;
+  margin-right: 12px;
+  flex-shrink: 0;
+  margin-top: 3px;
+}
+
+.contact-item p {
+  font-size: 16px;
+  color: #333;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 18px;
+  background: #4a7c59;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+}
+
+.btn i {
+  margin-right: 8px;
+}
+
+.btn:hover {
+  background: #3e674c;
+}
+
+
+/* ✅ Responsive for mobile */
+@media (max-width: 480px) {
+  .contact-info {
+    padding: 20px 15px;
+  }
+
+  .contact-item {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contact-item p {
+    font-size: 15px;
+  }
+
+  .btn {
+    font-size: 14px;
+    padding: 9px 16px;
+  }
+}
+
 /* @media (max-width: 768px) {
     .contact-section {
         flex-direction: column;
@@ -7497,6 +7581,7 @@ body {
     .contact-info {
         width: 100%; /* Full width on smaller screens */
         max-width: 500px; /* Prevents excessive stretching on tablets */
+        margin-left: 8px;
     }
 }
 
@@ -7649,7 +7734,6 @@ body {
         font-size: 18px;
     }
 }
-
 
 
 
@@ -8857,7 +8941,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   background-color: #e74c3c;
   color: white;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 2rem;
   padding: 12px 25px;
   margin-top: 5px;
   border: none;
@@ -8919,11 +9003,11 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   }
 
   .donation-card-box h3 {
-    font-size: 2rem;
+    font-size: 2.1rem;
   }
 
   .donation-card-box button {
-    font-size: 1.5rem;
+    font-size: 2rem;
     padding: 8px 18px;
   }
 }
@@ -9043,6 +9127,8 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 .volunteer-content p i {
   color: #4CAF50; /* light green theme */
+  margin-left: 23px;
+  display: inline-block;
 }
 
 
@@ -9383,6 +9469,292 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     font-size: 15px;
     margin: 18px auto 0 auto;
     text-align: center;
+  }
+}
+
+/* Copyright footer section */
+.copyright-section {
+  background-color: #1e1f2a;
+  color: #ffffff;
+  padding: 20px 40px;
+  /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+  font-size: 14px;
+  box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.2);
+}
+
+.copyright-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.copyright-left p {
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+  margin: 0;
+  opacity: 0.85;
+}
+
+.copyright-right a {
+  font-family: 'Poppins', sans-serif;  
+  color: #ffffff;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.copyright-right a:hover {
+ opacity: 0.7; 
+}
+
+/* Responsive for smaller screens */
+@media (max-width: 480px) {
+  .copyright-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .copyright-left,
+  .copyright-right {
+    width: 100%;
+  }
+
+  .copyright-right {
+    margin-top: 10px;
+  }
+
+  .copyright-right a {
+    margin: 5px 8px;
+    font-size: 13px;
+  }
+}
+
+.privacy-policy-section {
+    padding: 40px 140px;
+    font-family: 'Segoe UI', sans-serif;
+    line-height: 1.7;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .privacy-policy-section h2 {
+    color: #4CAF50; /* light green */
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  
+  .privacy-policy-section p {
+    margin-bottom: 15px;
+    font-size: large;
+  }
+  
+  @media (max-width: 768px) {
+    .privacy-policy-section {
+      padding: 25px 15px;
+    }
+  
+    .privacy-policy-section h2 {
+      font-size: 25px;
+    }
+  
+    .privacy-policy-section p {
+      font-size: 15px;
+    }
+  }
+  
+
+
+  .terms-section {
+    width: 100%;
+    padding: 60px 140px;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .terms-content h1 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .terms-content h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .terms-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .terms-content ul {
+    list-style-type: disc !important;
+    padding-left: 40px !important;
+    margin-bottom: 20px;
+  }
+  
+  .terms-content li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    display: list-item !important; /* Force default display */
+    list-style-position: outside !important;
+  }
+  
+  
+  /* ✅ Mobile Responsive Media Queries */
+  @media screen and (max-width: 768px) {
+    .terms-section {
+      padding: 40px 5vw;
+    }
+  
+    .terms-content h1 {
+      font-size: 28px;
+    }
+  
+    .terms-content h2 {
+      font-size: 24px;
+    }
+  
+    .terms-content p,
+    .terms-content li {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .terms-section {
+      padding: 30px 4vw;
+    }
+  
+    .terms-content h1 {
+      font-size: 24px;
+    }
+  
+    .terms-content h2 {
+      font-size: 20px;
+    }
+  
+    .terms-content p,
+    .terms-content li {
+      font-size: 15px;
+    }
+  }
+  
+/* refund policy */
+.refund-section {
+    width: 100%;
+    padding: 60px 140px;
+    box-sizing: border-box;
+    background-color: white;
+    color: #333;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  .refund-content h1 {
+    font-size: 36px;
+    color: #4CAF50;
+    margin-bottom: 30px;
+    font-weight: bold;
+  }
+  
+  .refund-content h2 {
+    font-size: 28px;
+    color: #4CAF50;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+  
+  .refund-content p {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+  }
+  
+  .refund-content ul {
+    list-style-type: disc !important;
+    padding-left: 40px !important;
+    margin-bottom: 20px;
+  }
+  
+  .refund-content li {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 12px;
+    display: list-item !important;
+    list-style-position: outside !important;
+  }
+
+  .refund-content a {
+    color: #0A66C2;
+    font-weight: 600;
+
+  }
+  
+  /* ✅ Responsive styles */
+  @media screen and (max-width: 768px) {
+    .refund-section {
+      padding: 40px 5vw;
+    }
+  
+    .refund-content h1 {
+      font-size: 28px;
+    }
+  
+    .refund-content h2 {
+      font-size: 24px;
+    }
+  
+    .refund-content p,
+    .refund-content li {
+      font-size: 16px;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .refund-section {
+      padding: 30px 4vw;
+    }
+  
+    .refund-content h1 {
+      font-size: 24px;
+    }
+  
+    .refund-content h2 {
+      font-size: 20px;
+    }
+  
+    .refund-content p,
+    .refund-content li {
+      font-size: 15px;
+    }
+  }
+  
+
+
+/* Fine-tuning for very small screens like 360px */
+@media (max-width: 360px) {
+  .copyright-section {
+    padding: 15px 20px;
+    font-size: 13px;
+  }
+
+  .copyright-right a {
+    font-size: 12.5px;
+    margin: 4px 6px;
   }
 }
 
