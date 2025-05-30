@@ -7600,7 +7600,12 @@ body {
         text-align: center;
     }
     .btn {
-        margin-left: 100px;
+        /* margin-left: 100px; */
+        margin-left: auto;
+        margin-right: auto;
+        display: block; /* Needed for margin auto to work */
+        text-align: center;
+        width: 155px;
     }
 }
 
@@ -9612,6 +9617,8 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     margin-bottom: 12px;
     display: list-item !important; /* Force default display */
     list-style-position: outside !important;
+    content: "•";
+    color: black;
   }
   
   
