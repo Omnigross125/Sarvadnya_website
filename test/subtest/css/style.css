@@ -2257,7 +2257,7 @@ select:focus {
 /* Extra Space for Smaller Screens (500px and below) */
 @media (max-width: 500px) {
     .custom-footer {
-        padding-bottom: 150px; /* Even more space for small screens */
+        padding-bottom: 60px; /* Even more space for small screens */
     }
 }
 
@@ -2267,6 +2267,7 @@ select:focus {
         padding-bottom: 120px; /* Maximum space for tiny screens */
     }
 }
+
 
 
 
