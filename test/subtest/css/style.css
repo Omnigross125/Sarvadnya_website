@@ -448,6 +448,18 @@ button{
     background: #2acb35;
     color: #fff;
 }
+@media (max-width: 768px) {
+    .scroll-to-top {
+        width: 35px;
+        height: 35px;
+        line-height: 38px;
+        font-size: 22px;
+        bottom: 143px; /* your specified bottom value */
+        right: 10px;   /* your specified right value */
+    }
+}
+
+
 
 
 /*Form validation styles */
