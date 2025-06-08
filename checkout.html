@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Checkout - Shri Krishna Yog Mandir</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    body {
+      background: #fff;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      text-align: center;
+      font-size: 32px;
+      margin-bottom: 40px;
+      color: #333;
+    }
+
+    .checkout-container {
+      display: flex;
+      gap: 30px;
+      max-width: 1200px;
+      margin: auto;
+      flex-wrap: wrap;
+    }
+
+    .form-section,
+    .summary-section {
+      flex: 1;
+      min-width: 300px;
+    }
+
+    .section-header {
+      background: #b71c1c;
+      color: white;
+      padding: 12px 20px;
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 20px;
+    }
+
+    form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+    }
+
+    form input,
+    form select {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .checkbox-label {
+      font-size: 15px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-bottom: 10px;
+    }
+
+    .summary-details {
+      background: #fafafa;
+      padding: 20px;
+      border-radius: 6px;
+      border: 1px solid #ddd;
+    }
+
+    .summary-details h4 {
+      margin-bottom: 15px;
+      font-size: 18px;
+      color: #222;
+    }
+
+    .summary-row {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      font-size: 16px;
+    }
+
+    .pay-info {
+      background: #f5f5f5;
+      padding: 15px;
+      font-size: 14px;
+      border: 1px solid #ccc;
+      margin-top: 15px;
+      border-radius: 4px;
+    }
+
+    .donate-btn {
+      background: #ff6a00;
+      color: white;
+      border: none;
+      padding: 15px;
+      font-size: 16px;
+      width: 100%;
+      font-weight: bold;
+      margin-top: 20px;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .donate-btn:hover {
+      background: #e65c00;
+    }
+
+    .red-note {
+      color: red;
+      font-size: 13px;
+      margin-top: -12px;
+      margin-bottom: 15px;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .checkout-container {
+        flex-direction: column;
+      }
+
+      .donate-btn {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Proceed to Donation</h1>
+
+  <div class="checkout-container">
+
+    <!-- Donor Information -->
+    <div class="form-section">
+      <div class="section-header">DONOR INFORMATION</div>
+      <form>
+        <label>First name *</label>
+        <input type="text" required>
+
+        <label>Last name *</label>
+        <input type="text" required>
+
+        <label>Company name</label>
+        <input type="text">
+
+        <label>Country / Region *</label>
+        <select required>
+          <option>India</option>
+        </select>
+
+        <label>Street address *</label>
+        <input type="text" placeholder="House number and street name" required>
+        <input type="text" placeholder="Apartment, suite, unit, etc. (optional)">
+
+        <label>Town / City *</label>
+        <input type="text" required>
+
+        <label>State *</label>
+        <select required>
+          <option>Delhi</option>
+          <option>Maharashtra</option>
+        </select>
+
+        <label>PIN Code *</label>
+        <input type="text" required>
+
+        <label>Phone *</label>
+        <input type="text" required>
+
+        <label>Email address *</label>
+        <input type="email" required>
+
+        <!-- <label class="checkbox-label">
+          <input type="checkbox"> Create an account?
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" checked> Do you want 80G Benefits?
+        </label> -->
+
+        <label>Enter your PAN <span class="red-note">(Mandatory for donation 50,000 or more.)</span></label>
+        <input type="text">
+      </form>
+    </div>
+
+    <!-- Donation Details -->
+    <div class="summary-section">
+      <div class="section-header">DONATION DETAILS</div>
+
+      <div class="summary-details">
+        <!-- <div class="summary-row">
+          <div>Sarvadnya Mission Charity Donation - 500000 × 1</div>
+          <div><strong>₹500,000.00</strong></div>
+        </div> -->
+        <div class="summary-row" id="donation-summary">
+          <div></div>
+          <div><strong>₹<span id="total">0.00</span></strong></div>
+        </div>
+        <hr>
+        <!-- <div class="summary-row">
+          <div>Subtotal</div>
+          <div>₹500,000.00</div>
+        </div>
+        <div class="summary-row">
+          <div><strong>Total</strong></div>
+          <div><strong>₹500,000.00</strong></div>
+        </div> -->
+        <div class="summary-row">
+          <div>Subtotal</div>
+          <div>₹<span id="subtotal">0.00</span></div>
+        </div>
+        <div class="summary-row">
+          <div><strong>Total</strong></div>
+          <div><strong>₹<span id="total">0.00</span></strong></div>
+        </div>
+        
+
+        <div class="pay-info">
+          <strong>UPI / Credit Card / Debit Card / NetBanking</strong><br>
+          <!-- Pay securely through Razorpay -->
+        </div>
+
+        <button class="donate-btn">DONATE NOW</button>
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Function to get URL parameter
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+  
+    // Check for amount in URL
+    const amountFromUrl = getQueryParam('amount');
+  
+    if (amountFromUrl) {
+      const amountNum = parseFloat(amountFromUrl);
+      let meals = '';
+  
+      // Map amount to meals
+      if (amountNum === 1000) {
+        meals = '50';
+      } else if (amountNum === 2000) {
+        meals = '100';
+      } else if (amountNum === 5000) {
+        meals = '250';
+      } else if (amountNum === 10000) {
+        meals = '500';
+      }
+  
+      // Format currency
+      const formattedAmount = amountNum.toLocaleString('en-IN', {
+        style: 'decimal',
+        minimumFractionDigits: 2,
+        maximumFractionDigits: 2
+      });
+  
+      // Update donation summary row (replace first <div>)
+      const summaryRow = document.getElementById('donation-summary');
+      summaryRow.children[0].textContent = `Sarvadnya Mission Charity Donation - ₹${amountNum} for ${meals} meals`;
+  
+      // Update subtotal and total values
+      document.getElementById('subtotal').textContent = formattedAmount;
+      document.getElementById('total').textContent = formattedAmount;
+    }
+  </script>
+  
+</body>
+</html>
+

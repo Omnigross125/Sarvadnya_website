@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #f5fff5;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      animation: fadeIn 1s ease-in;
+    }
+
+    .thankyou-container {
+      text-align: center;
+      padding: 40px;
+      background: white;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0, 128, 0, 0.15);
+      animation: slideUp 1s ease-out;
+      max-width: 500px;
+      width: 90%;
+    }
+
+    .checkmark-wrapper {
+      margin-bottom: 20px;
+    }
+
+    .checkmark-circle {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: #8bc34a;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto;
+      animation: popIn 0.8s ease-in-out;
+    }
+
+    .checkmark {
+      font-size: 40px;
+      color: white;
+    }
+
+    h1 {
+      color: #4caf50;
+      margin-bottom: 10px;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+
+    .home-btn {
+      display: inline-block;
+      margin-top: 25px;
+      padding: 12px 25px;
+      background: #4caf50;
+      color: white;
+      text-decoration: none;
+      border-radius: 30px;
+      font-weight: 600;
+      transition: background 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background: #388e3c;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes popIn {
+      0% { transform: scale(0); }
+      70% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+
+     /* Responsive Design */
+     @media (max-width: 480px) {
+      .thankyou-container {
+        padding: 25px 15px;
+        border-radius: 15px;
+        width: 350px;
+      }
+
+      h1 {
+        font-size: 22px;
+      }
+
+      p {
+        font-size: 14px;
+      }
+
+      .checkmark-circle {
+        width: 60px;
+        height: 60px;
+      }
+
+      .checkmark {
+        font-size: 30px;
+      }
+
+      .home-btn {
+        padding: 10px 20px;
+        font-size: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="thankyou-container">
+    <div class="checkmark-wrapper">
+      <div class="checkmark-circle">
+        <div class="checkmark">&#10004;</div>
+      </div>
+    </div>
+    <h1>Thank You for Your Generous Donation!</h1>
+    <p> We are truly grateful for your support.</p>
+    <a href="/" class="home-btn">Return to Homepage</a>
+  </div>
+</body>
+</html>

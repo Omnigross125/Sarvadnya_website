@@ -2134,6 +2134,7 @@ h2.policy-head, h3.policy-head {
     padding-bottom : 5px
   }
   .btn-donate {
+    margin-left: 85px;
     font-size : 15px
   }
   .donatefooter h5 {
@@ -2207,4 +2208,93 @@ h2.policy-head, h3.policy-head {
   .gallery img:hover {
     transform: scale(1.05);
   }
+     .amount-input {
+    width: 100px;
+    padding: 6px 8px;
+    font-size: 14px;
+    border: 2px solid #ccc;
+    border-radius: 6px;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.amount-input:focus {
+    border-color: #8BC34A; /* Light green theme */
+}
+
+  /* Responsive adjustments */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+  .amount-input {
+      width: 100px;
+      font-size: 15px;
+  }
+}
+
+/* For mobile screens 480px */
+@media (max-width: 480px) {
+  .amount-input {
+      width: 90px;
+      font-size: 14px;
+      padding: 5px 7px;
+  }
+}
+/* Responsive adjustments */
+
+/* For tablets and medium screens */
+@media (max-width: 768px) {
+  .amount-input {
+      width: 100px;
+      font-size: 15px;
+  }
+}
+
+/* For mobile screens 480px */
+@media (max-width: 480px) {
+  .amount-input {
+      width: 90px;
+      font-size: 14px;
+      padding: 5px 7px;
+  }
+}
+/* For ultra-small screens 350px */
+@media (max-width: 350px) {
+  .amount-input {
+      width: 75px;
+      font-size: 12.5px;
+      padding: 4px 5px;
+  }
+}
+
+/* For very small devices 360px */
+@media (max-width: 360px) {
+  .amount-input {
+      width: 80px;
+      font-size: 13px;
+      padding: 4px 6px;
+  }
+}
+/* 375px */
+@media (max-width: 375px) {
+  .amount-input {
+      width: 82px;
+      font-size: 13.2px;
+      padding: 5px 5px;
+  }
+}
+/* Small screens: 380px */
+@media (max-width: 380px) {
+  .amount-input {
+      width: 85px;
+      font-size: 13.5px;
+      padding: 5px 6px;
+  }
+}
+
+
+
+
+  
   

@@ -599,9 +599,12 @@
                                 <td valign="middle">
                                     <input type="number" class="amount-input" placeholder="₹ Amount" />
                                 </td>
-                                <td valign="middle" style="text-align: center;" class="yellow-border"><a
+                                <td valign="middle" style="text-align: center;" class="yellow-border">
+                                    <!-- <a
                                         
-                                        target="_blank" class="btn btn-primary btn-sm">DONATE NOW</a></td>
+                                        target="_blank" class="btn btn-primary btn-sm">DONATE NOW</a> -->
+                                       <a href="#" id="custom-donate-btn" class="btn btn-primary btn-sm">Donate Now</a>
+                                    </td>
                             </tr>
                         </tbody>
                     </table>
@@ -859,7 +862,7 @@
         <div class="">
             <div class="container">
                 <div class="row">
-<p class="csr">For CSR enquiries : <a href="mailto:sarvadnyayoga@gmail.com"> sarvadnyayoga@gmail.com</a> </p>
+                <p class="csr">For CSR enquiries : <a href="mailto:shrikrishnayogmandir@gmail.com">shrikrishnayogmandir@gmail.com</a> </p>
                 </div>
             </div>
             </div>
@@ -979,6 +982,25 @@ qp('track', 'GenerateLead');
 
 
 
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const customDonateBtn = document.getElementById("custom-donate-btn");
+    const amountInput = document.querySelector(".amount-input");
+
+    customDonateBtn.addEventListener("click", function (e) {
+      e.preventDefault(); // prevent default <a> link behavior
+
+      const amount = amountInput.value.trim();
+
+      if (amount && !isNaN(amount) && Number(amount) > 0) {
+        // Redirect to actual checkout with entered amount
+        window.location.href = `https://sarvadnyayoga.com/test/subtest/SYoga-Anna-Dan/checkout.html?amount=${amount}`;
+      } else {
+        alert("Please enter a valid donation amount.");
+      }
+    });
+  });
+</script>
 
 </body>
 
