@@ -134,7 +134,9 @@ img {
 }
 
 .logo img {
-    height: 50px;
+    /* height: 50px; */ 
+    height: 52px;
+    width: 62px;
     margin-top: 17px; 
 }
 
@@ -1859,7 +1861,7 @@ select:focus {
     transition: all 500ms ease;
 }
 .single-blog-item .text-holder .blog-title:hover{
-  color: #2acb35;
+  color: #E74C3C;
 }
 .single-blog-item .text-holder .text {}
 .single-blog-item .text-holder .text p {
@@ -2094,7 +2096,7 @@ select:focus {
  
 /* start new footer style */
 .custom-footer {
-    background: #222426;
+    background: #111;
     padding: 32px 0; /* Increased padding for more height */
     min-height: 250px; /* Ensures a minimum height */
     color: #ffffff;
@@ -2166,7 +2168,7 @@ select:focus {
 .custom-footer-title {
     font-size: 18px; /* Increased heading size */
     margin-bottom: 12px;
-    color: #a8e063; /* Light green heading color */
+    color: #E74C3C; /* Light green heading color */
 }
 
 .custom-footer-list {
@@ -2955,7 +2957,7 @@ select:focus {
     transition: all 500ms ease;
 }
 .breadcrumb-bottom-area .left ul li.active{
-    color: #2acb35;    
+    color: #E74C3C;    
 }
 .breadcrumb-bottom-area .left ul li i{
     font-size: 16px;
@@ -7947,7 +7949,8 @@ body {
 
 /* General Styling */
 .about-us {
-    background: linear-gradient(to bottom, #e8f5e9, #f2fff2); /* Light Green Gradient */
+    /* background: linear-gradient(to bottom, #e8f5e9, #f2fff2);  */
+    background-color: #FFEDDF;
     padding: 60px 20px;
     text-align: center;
     color: #2e4d24; /* Deep Green */
@@ -7964,7 +7967,7 @@ body {
 .about-title {
     font-size: 42px;
     font-weight: bold;
-    color: #2e7d32;
+    color: #E74C3C;
     text-align: center;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -7972,7 +7975,7 @@ body {
 
 .about-heading {
     font-size: 28px;
-    color: #388e3c;
+    color: #E74C3C;
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
@@ -8004,7 +8007,7 @@ body {
     margin-top: 40px;
     margin-left: 350px;
     padding: 12px 58px;
-    background: #4caf50;
+    background: #E74C3C;
     color: white;
     text-decoration: none;
     font-size: 18px;
@@ -8014,7 +8017,7 @@ body {
 }
 
 .about-join-button:hover {
-    background: #388e3c;
+    background: #C0392B;
 }
 
 /* Responsive styles for tablets and smaller devices (768px and below) */
@@ -8118,7 +8121,8 @@ body {
     right: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(135deg, #a2e6a6, #68c47e); /* a bit darker than the light green */
+    /* background: linear-gradient(135deg, #a2e6a6, #68c47e);  */
+    background-color: #E74C3C;
     z-index: 9999;
     transition: right 0.4s ease-in-out;
     overflow-y: auto;
@@ -8147,7 +8151,7 @@ body {
     transition: color 0.3s ease;
 }
 .offcanvas-close:hover {
-    color: #2acb35;
+    color:  #C0392B;
 }
 
 /* Navigation Styling */
@@ -8163,14 +8167,14 @@ body {
     color: #1a1a1a;
     font-size: 16px;
     font-weight: 600;
-    background-color: #eafff1;
+    background-color: #FFEDDF;
     border-radius: 6px;
     margin-bottom: 10px;
     transition: background 0.3s ease;
     text-decoration: none;
 }
 .mobile-offcanvas .navigation > li > a:hover {
-    background-color: #c4f6dc;
+    background-color: #C0392B;
 }
 
 /* Dropdown Arrows */
@@ -8178,7 +8182,7 @@ body {
     content: "›";
     float: right;
     font-weight: bold;
-    color: #2acb35;
+    color:  #E74C3C;
     transition: transform 0.3s ease;
 }
 .mobile-offcanvas .navigation li.dropdown.open > a::after {
@@ -8200,16 +8204,16 @@ body {
 .mobile-offcanvas .navigation li.dropdown ul li a {
     display: block;
     padding: 12px 18px;
-    background-color: #ecfff5;
+    background-color: #FFEDDF;
     font-size: 15px;
     font-weight: 500;
     color: #222;
-    border-left: 2px solid #2acb35;
+    border-left: 2px solid  #E74C3C;
     border-radius: 4px;
     margin-bottom: 6px;
 }
 .mobile-offcanvas .navigation li.dropdown ul li a:hover {
-    background-color: #dafae8;
+    background-color: #C0392B;
 }
 
 body.sidebar-open {
@@ -8625,7 +8629,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 .welcome-section h1 {
   font-size: 55px;
-  color:  #32CD32;
+  color: #E74C3C;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: 'Dosis', Helvetica, Arial, Lucida, sans-serif;
@@ -9492,7 +9496,8 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 /* Copyright footer section */
 .copyright-section {
-  background-color: #1e1f2a;
+  /* background-color: #1e1f2a; */
+  background-color: #E74C3C;
   color: #ffffff;
   padding: 20px 40px;
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
