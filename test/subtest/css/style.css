@@ -2096,7 +2096,7 @@ select:focus {
  
 /* start new footer style */
 .custom-footer {
-    background: #111;
+    background: #222426;
     padding: 32px 0; /* Increased padding for more height */
     min-height: 250px; /* Ensures a minimum height */
     color: #ffffff;
@@ -2168,7 +2168,7 @@ select:focus {
 .custom-footer-title {
     font-size: 18px; /* Increased heading size */
     margin-bottom: 12px;
-    color: #E74C3C; /* Light green heading color */
+    color: #a8e063; /* Light green heading color */
 }
 
 .custom-footer-list {
@@ -9496,8 +9496,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 /* Copyright footer section */
 .copyright-section {
-  /* background-color: #1e1f2a; */
-  background-color: #E74C3C;
+  background-color: #1e1f2a;
   color: #ffffff;
   padding: 20px 40px;
   /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
