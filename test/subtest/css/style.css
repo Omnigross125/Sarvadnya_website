@@ -134,9 +134,7 @@ img {
 }
 
 .logo img {
-    /* height: 50px; */ 
-    height: 52px;
-    width: 62px;
+    height: 50px; 
     margin-top: 17px; 
 }
 
@@ -295,7 +293,7 @@ button{
     padding-bottom: 30px;
 }
 .sec-title h1 {
-    color: #404040;
+    color: #703d1a;
     font-size: 32px;
     font-weight: 700;
     line-height: 36px;
@@ -2957,7 +2955,7 @@ select:focus {
     transition: all 500ms ease;
 }
 .breadcrumb-bottom-area .left ul li.active{
-    color: #E74C3C;    
+    color: #703d1a;    
 }
 .breadcrumb-bottom-area .left ul li i{
     font-size: 16px;
@@ -6429,14 +6427,14 @@ select:focus {
 .benefits-container {
     width: 100%;
     padding: 50px 5%;
-    background: linear-gradient(to bottom, #e6f7e6, #c8e6c9); 
+    background: linear-gradient(to bottom, #f8eee4, #f8eee4); 
     text-align: center;
 }
 
 .benefits-container h2 {
     font-size: 28px;
     font-weight: bold;
-    color: #4c9444; 
+    color: #703d1a; 
 }
 
 .benefits-grid {
@@ -6467,13 +6465,13 @@ select:focus {
     margin: 0;
     font-size: 20px;
     font-weight: bold;
-    color: #3e8e41;
+    color: #703d1a;
 }
 
 .benefit-item p {
     margin: 5px 0 0;
     font-size: 16px;
-    color: #245c3a;
+    color: #2c3e50;
 }
 
 .subscribe-btn {
@@ -6481,8 +6479,8 @@ select:focus {
 }
 
 .subscribe-btn button {
-    background-color: #7ccf8b; 
-    color: white;
+    background-color: #a3d8a3; 
+    color: #2c3e50;
     border: none;
     padding: 12px 50px;
     font-size: 20px;
@@ -6494,7 +6492,8 @@ select:focus {
 }
 
 .subscribe-btn button:hover {
-    background-color: #7ccf8b; 
+    background-color: #703d1a;
+    color: white; 
     transform: scale(1.05);
 }
 
@@ -6629,7 +6628,7 @@ select:focus {
 .content-box h2 {
     font-size: 2rem;
     font-weight: bold; /* Makes it bold */
-    color: #32CD32; /* Light Green */
+    color: #703d1a; /* Light Green */
     margin-bottom: 10px;
 }
 
@@ -6645,7 +6644,7 @@ select:focus {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: #32CD32; /* Light Green */
+    color: #703d1a; /* Light Green */
     margin-bottom: 30px;
 }
 
@@ -6653,7 +6652,7 @@ select:focus {
     text-align: center;
     font-size: 3rem;
     font-weight: bold;
-    color: #32CD32; /* Light Green */
+    color: #703d1a; /* Light Green */
     margin-bottom: 30px;
 }
 
@@ -6922,7 +6921,7 @@ select:focus {
 .content-box h2 {
     font-size: 2rem;
     font-weight: bold;
-    color: #32CD32;
+    color: #703d1a;
     margin-bottom: 10px;
 }
 
@@ -7026,14 +7025,14 @@ span {
 }
 
 .testimonials h2 {
-    color: #32CD32;
+    color: #703d1a;
     font-weight: bold;
     font-size: 28px;
     margin-bottom: 10px;
 }
 
 .testimonials p {
-    color: #666;
+    color: #2c3e50;
     margin-bottom: 30px;
 }
 
@@ -7045,7 +7044,7 @@ span {
 }
 
 .testimonial-box {
-    background: white;
+    background: #f8eee4;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -7074,11 +7073,11 @@ span {
 
 h3 {
     margin: 10px 0 5px;
-    color: #32CD32;
+    color: #703d1a;
 }
 
 span {
-    color: #777;
+    color: #2c3e50;
     font-size: 14px;
 }
 
@@ -7171,7 +7170,7 @@ span {
 }
 
 .toggle-buttons button {
-    background-color: #a8e6cf; /* Light green */
+    background-color: #f8eee4; /* Light green */
     border: none;
     padding: 10px 20px;
     cursor: pointer;
@@ -7183,8 +7182,8 @@ span {
 }
 
 .toggle-buttons button.active {
-    background-color: #81c784; /* Darker green for active button */
-    color: white;
+    background-color: #a3d8a3; /* Darker green for active button */
+    color: #2c3e50;
     font-weight: bold;
 }
 
@@ -7199,11 +7198,11 @@ span {
 }
 
 .pricing-box {
-    border: 1px solid #81c784; /* Darker green */
+    border: 1px solid #703d1a; /* Darker green */
     border-radius: 8px;
     padding: 30px; /* Increased padding for more space */
     width: 300px; /* Increased width */
-    background-color: #ffffff; /* White background for boxes */
+    background-color: #f8eee4; /* White background for boxes */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -7220,10 +7219,12 @@ span {
 .pricing-box p {
     font-weight: bolder;
     font-size: x-large;
+    color: #2c3e50;
 }
 
 .pricing-box ul li {
     font-weight: bold;
+    color: #2c3e50;
 }
 
 .pricing-box ul {
@@ -7234,12 +7235,13 @@ span {
 }
 
 .join-now {
-    background-color: #4caf50; /* Green color for visibility */
-    color: white; /* White text */
+    background-color: #a3d8a3; /* Green color for visibility */
+    color: #2c3e50; 
     border: none;
     padding: 10px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
+    font-weight: 600;
     border-radius: 5px;
     transition: background-color 0.3s, transform 0.3s;
     width: 100%; /* Full width */
@@ -7247,7 +7249,8 @@ span {
 }
 
 .join-now:hover {
-    background-color: #388e3c; /* Darker green on hover */
+    background-color: #703d1a; /* Darker green on hover */
+    color: white;
     transform: scale(1.05); /* Slightly enlarge on hover */
 }
 
@@ -7287,6 +7290,7 @@ span {
 
 .faq-section h2 {
     font-size: 2.5em; /* Larger font size for the heading */
+    color: #703d1a;
     margin-bottom: 30px; /* Space below the heading */
 }
 
@@ -7311,11 +7315,11 @@ span {
 
 .panel-title a {
     text-decoration: none; /* Remove underline from links */
-    color: #333; /* Dark text color */
+    color: #2c3e50; /* Dark text color */
 }
 
 .panel-title a:hover {
-    color: #32CD32; /* Change color on hover */
+    color: #703d1a; /* Change color on hover */
 }
 
 .panel-body {
@@ -7495,7 +7499,7 @@ body {
  .contact-info {
   width: 100%;
   max-width: 600px;
-  background: #e0f2e9;
+  background: #f8eee4;
   padding: 25px 20px;
   border-radius: 10px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
@@ -7504,13 +7508,14 @@ body {
 }
 
 .contact-info h2 {
-  color: #4a7c59;
+  color: #703d1a;
   margin-bottom: 20px;
   font-size: 30px;
 }
 
 .contact-info p{
     font-size: 16px;
+    color: #2c3e50;
 }
 .contact-item {
   display: flex;
@@ -7537,8 +7542,8 @@ body {
   display: inline-block;
   margin-top: 15px;
   padding: 10px 18px;
-  background: #4a7c59;
-  color: white;
+  background: #a3d8a3;
+  color: #2c3e50;
   text-decoration: none;
   border-radius: 5px;
   font-weight: 500;
@@ -7550,7 +7555,8 @@ body {
 }
 
 .btn:hover {
-  background: #3e674c;
+  background: #703d1a;
+  color: white;
 }
 
 
@@ -7628,7 +7634,7 @@ body {
 /* Connect with Us Section */
 .connect-section {
     text-align: center;
-    background: #e6f5e6; /* Light green background */
+    background: #f8eee4; /* Light green background */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -7639,13 +7645,13 @@ body {
 
 /* Heading */
 .connect-section h2 {
-    color: #2c3e50;
+    color: #703d1a;
     margin-bottom: 15px;
 }
 
 /* Email Box */
 .email-box {
-    background: #c3e6c3; /* Light green */
+    background: #a3d8a3; /* Light green */
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
@@ -7678,7 +7684,7 @@ body {
     display: flex;
     justify-content: space-around;
     padding: 10px;
-    background: #c3e6c3; /* Light green to match theme */
+    background: #a3d8a3; /* Light green to match theme */
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -7782,7 +7788,7 @@ body {
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
-    color: #2d572c; /* Dark green for headings */
+    color: #703d1a; /* Dark green for headings */
 }
 
 /* Grid Layout */
@@ -7796,18 +7802,18 @@ body {
 
 /* Card Styling */
 .donate-card {
-    background: white;
+    background: #f8eee4;
     padding: 15px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: 0.3s;
-    border: 2px solid #7ac142; /* Light green border */
+    border: 2px solid #703d1a; /* Light green border */
 }
 
 .donate-card:hover {
     transform: scale(1.05);
-    border-color: #5ca332; /* Darker green on hover */
+    border-color: #703d1a; /* Darker green on hover */
 }
 
 .donate-card img {
@@ -7820,7 +7826,7 @@ body {
 .donate-card h3 {
     font-size: 18px;
     margin: 10px 0;
-    color: #2d572c; /* Dark green text */
+    color: #2c3e50; /* Dark green text */
 }
 
 .donate-card p {
@@ -7830,18 +7836,20 @@ body {
 
 /* Donate Button */
 .donate-btn {
-    background-color: #7ac142; /* Light green button */
-    color: white;
+    background-color: #a3d8a3; /* Light green button */
+    color: #2c3e50;
     padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
     font-size: 16px;
+    font-weight: 600;
 }
 
 .donate-btn:hover {
-    background-color: #5ca332; /* Dark green on hover */
+    background-color: #703d1a; /* Dark green on hover */
+    color: white;
 }
 
 /* Responsive Design */
@@ -7950,7 +7958,7 @@ body {
 /* General Styling */
 .about-us {
     /* background: linear-gradient(to bottom, #e8f5e9, #f2fff2);  */
-    background-color: #FFEDDF;
+    background-color: #f8eee4;
     padding: 60px 20px;
     text-align: center;
     color: #2e4d24; /* Deep Green */
@@ -7967,7 +7975,7 @@ body {
 .about-title {
     font-size: 42px;
     font-weight: bold;
-    color: #E74C3C;
+    color: #703d1a;
     text-align: center;
     margin-bottom: 15px;
     letter-spacing: 1px;
@@ -7975,7 +7983,7 @@ body {
 
 .about-heading {
     font-size: 28px;
-    color: #E74C3C;
+    color: #703d1a;
     font-weight: bold;
     text-align: center;
     margin-top: 30px;
@@ -7986,7 +7994,7 @@ body {
 .about-text {
     font-size: 17px;
     line-height: 1.6;
-    color: #2e4d24;
+    color: #2c3e50;
 }
 
 /* Lists */
@@ -7997,6 +8005,7 @@ body {
 
 .about-list li {
     font-size: 17px;
+    color: #2c3e50;
     padding: 5px 0;
 }
 
@@ -8007,8 +8016,8 @@ body {
     margin-top: 40px;
     margin-left: 350px;
     padding: 12px 58px;
-    background: #E74C3C;
-    color: white;
+    background: #a3d8a3;
+    color: #2c3e50;
     text-decoration: none;
     font-size: 18px;
     font-weight: bold;
@@ -8017,7 +8026,8 @@ body {
 }
 
 .about-join-button:hover {
-    background: #C0392B;
+    background: #703d1a;
+    color: white;
 }
 
 /* Responsive styles for tablets and smaller devices (768px and below) */
@@ -8059,7 +8069,7 @@ body {
 /* Title Styling */
 .schedule-title {
     font-size: 28px;
-    color: #2c5e32;
+    color: #703d1a;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -8084,8 +8094,8 @@ body {
 
 /* Table Head Styling */
 .schedule-table thead {
-    background-color: #43a047;
-    color: white;
+    background-color: #a3d8a3;
+    color: #2c3e50;
     font-size: 18px;
 }
 
@@ -8098,7 +8108,7 @@ body {
 
 /* Alternate Row Colors */
 .schedule-table tbody tr:nth-child(odd) {
-    background-color: #f0f9f2;  /* Light green */
+    background-color: #f8eee4;  /* Light green */
 }
 
 .schedule-table tbody tr:nth-child(even) {
@@ -8107,7 +8117,8 @@ body {
 
 /* Hover Effect on All Rows */
 .schedule-table tbody tr:hover {
-    background-color: #d8f3dc;  /* Slightly darker green on hover */
+    background-color: #703d1a;  /* Slightly darker green on hover */
+    color: white;
     transition: background-color 0.3s ease-in-out;
 }
 
@@ -8122,7 +8133,7 @@ body {
     width: 100%;
     height: 100%;
     /* background: linear-gradient(135deg, #a2e6a6, #68c47e);  */
-    background-color: #E74C3C;
+    background-color: #f8eee4;
     z-index: 9999;
     transition: right 0.4s ease-in-out;
     overflow-y: auto;
@@ -8151,7 +8162,7 @@ body {
     transition: color 0.3s ease;
 }
 .offcanvas-close:hover {
-    color:  #C0392B;
+    color:  #703d1a;
 }
 
 /* Navigation Styling */
@@ -8167,14 +8178,15 @@ body {
     color: #1a1a1a;
     font-size: 16px;
     font-weight: 600;
-    background-color: #FFEDDF;
+    background-color: #a3d8a3;
     border-radius: 6px;
     margin-bottom: 10px;
     transition: background 0.3s ease;
     text-decoration: none;
 }
 .mobile-offcanvas .navigation > li > a:hover {
-    background-color: #C0392B;
+    background-color: #703d1a;
+    color: white;
 }
 
 /* Dropdown Arrows */
@@ -8182,7 +8194,7 @@ body {
     content: "›";
     float: right;
     font-weight: bold;
-    color:  #E74C3C;
+    color:  #703d1a;
     transition: transform 0.3s ease;
 }
 .mobile-offcanvas .navigation li.dropdown.open > a::after {
@@ -8204,16 +8216,17 @@ body {
 .mobile-offcanvas .navigation li.dropdown ul li a {
     display: block;
     padding: 12px 18px;
-    background-color: #FFEDDF;
+    background-color: #a3d8a3;
     font-size: 15px;
     font-weight: 500;
     color: #222;
-    border-left: 2px solid  #E74C3C;
+    border-left: 2px solid  #703d1a;
     border-radius: 4px;
     margin-bottom: 6px;
 }
 .mobile-offcanvas .navigation li.dropdown ul li a:hover {
-    background-color: #C0392B;
+    background-color: #703d1a;
+    color: white;
 }
 
 body.sidebar-open {
@@ -8252,7 +8265,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 /* Title */
 .events-title {
     font-size: 32px;
-    color: #2e7d32; /* Vibrant Dark Green */
+    color: #703d1a; /* Vibrant Dark Green */
     text-align: center;
     margin-bottom: 20px;
 }
@@ -8262,7 +8275,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #e6f9ea; /* Vibrant Light Green Background */
+    background-color: #f8eee4; /* Vibrant Light Green Background */
     padding: 18px;
     border-radius: 10px;
     margin-bottom: 18px;
@@ -8273,7 +8286,8 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 /* Hover Effect */
 .event:hover {
-    background-color: #d0f0d8; /* Slightly deeper light green on hover */
+    background-color: #703d1a; /* Slightly deeper light green on hover */
+    color: white;
     box-shadow: 0px 6px 14px rgba(0, 128, 0, 0.15);
     transform: translateY(-3px);
 }
@@ -8291,14 +8305,18 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     font-size: 16px;
     font-weight: bold;
     border-radius: 8px;
-    color: #2e7d32;
+    color: #703d1a;
 }
 
 /* Event Details */
 .event-details h2 {
     font-size: 18px;
     margin: 0;
-    color: #2e7d32;
+    color: #2c3e50;
+}
+
+.event:hover .event-details h2 {
+    color: white;
 }
 
 .featured .event-details h2 {
@@ -8307,8 +8325,8 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 /* Register Button */
 .register-btn {
-    background-color: #43a047; /* Vibrant Green */
-    color: white;
+    background-color: #a3d8a3; /* Vibrant Green */
+    color: #2c3e50;
     border: none;
     padding: 8px 15px;
     font-size: 14px;
@@ -8320,6 +8338,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 .register-btn:hover {
     background-color: #388e3c;
+    color: white;
 }
 
 /* Responsive Design */
@@ -8438,13 +8457,13 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   .member-card h3 {
     font-size: 18px;
     margin: 12px 0 4px;
-    color: #222;
+    color: #703d1a;
   }
   
   .member-card p {
     font-size: 15px;
     margin-bottom: 12px;
-    color: #666;
+    color: #2c3e50;
   }
   
   /* Responsive Design */
@@ -8517,16 +8536,17 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   .legal-title {
     text-align: center;
     font-size: 30px;
-    color: #2e7d32;
+    color: #703d1a;
     margin-bottom: 40px;
     font-family: 'Poppins', sans-serif;
   }
   
   .legal-document {
-    background: #e6f9ea;
+    background: #f8eee4;
     border-radius: 10px;
     padding: 20px;
     margin-bottom: 20px;
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -8536,20 +8556,27 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   }
   
   .legal-document:hover {
-    background: #d0f0d8;
+    background: #703d1a;
+    color: white;
     transform: translateY(-3px);
     box-shadow: 0px 6px 12px rgba(0, 128, 0, 0.15);
   }
   
   .doc-name {
     font-size: 18px;
-    color: #2e7d32;
+    color: #2c3e50;
     font-weight: 500;
   }
+  .doc-name:hover {
+    color: white;
+  }
+  .legal-document:hover .doc-name {
+  color: white;
+}
   
   .view-btn {
-    background-color: #43a047;
-    color: white;
+    background-color: #a3d8a3;
+    color: #2c3e50;
     padding: 10px 18px;
     text-decoration: none;
     font-size: 14px;
@@ -8560,6 +8587,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   
   .view-btn:hover {
     background-color: #388e3c;
+    color: white;
   }
   
   /* Responsive */
@@ -8629,7 +8657,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 .welcome-section h1 {
   font-size: 55px;
-  color: #E74C3C;
+  color: #703d1a;
   font-weight: bold;
   margin-bottom: 20px;
   font-family: 'Dosis', Helvetica, Arial, Lucida, sans-serif;
@@ -8648,6 +8676,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   font-weight: lighter;
   line-height: 1.6;
   max-width: 1200px;
+  color: #2c3e50;
   margin: 10px auto;
   font-style: italic;
   font-family: 'Patrick Hand', cursive;
@@ -8658,7 +8687,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   font-size: large;
   margin-top: 20px;
   font-weight: bold;
-  color: #c0392b;
+  color: #703d1a;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -8906,7 +8935,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 .donate-heading-cards {
   font-size: 2.5rem;
-  color: #333;
+  color: #703d1a;
   position: relative;
   margin-bottom: 40px;
 }
@@ -9059,7 +9088,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 } */
 
 .volunteer-intro {
-  background-color: #f1fff1;
+  background-color: #f8eee4;
   padding: 60px 10%;
   text-align: center;
 }
@@ -9067,7 +9096,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 .volunteer-intro h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #3a8f3a;
+  color: #703d1a;
   margin-bottom: 20px;
 }
 
@@ -9092,7 +9121,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 }
 
 .volunteer-content h2 {
-  color: #3a8f3a;
+  color: #703d1a;
   font-size: 28px;
   margin-top: 30px;
 }
@@ -9115,7 +9144,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 }
 
 .volunteer-content a {
-  color: #3a8f3a;
+  color: #703d1a;
   text-decoration: none;
   font-weight: bold;
 }
@@ -9148,8 +9177,8 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 }
 
 .volunteer-content p i {
-  color: #4CAF50; /* light green theme */
-  margin-left: 23px;
+  color: #703d1a; /* light green theme */
+  margin-left: 3px;
   display: inline-block;
 }
 
@@ -9252,7 +9281,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 }
 
 .corporate-intro {
-  background-color: #f1fff1;
+  background-color: #f8eee4;
   padding: 60px 10%;
   text-align: center;
 }
@@ -9260,7 +9289,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 .corporate-intro h1 {
   font-size: 36px;
   font-weight: bold;
-  color: #3a8f3a;
+  color: #703d1a;
   margin-bottom: 10px;
 }
 
@@ -9284,7 +9313,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 }
 
 .corporate-content h2 {
-  color: #3a8f3a;
+  color: #703d1a;
   font-size: 28px;
   margin-top: 30px;
 }
@@ -9292,7 +9321,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 .corporate-content h3 {
   font-size: 22px;
   margin-top: 20px;
-  color: #2d6b2d;
+  color: #8a5228;
 }
 
 .corporate-content p {
@@ -9563,7 +9592,7 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   }
   
   .privacy-policy-section h2 {
-    color: #4CAF50; /* light green */
+    color: #703d1a; /* light green */
     margin-top: 30px;
     font-size: 32px;
     font-weight: bold;
@@ -9602,14 +9631,14 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   
   .terms-content h1 {
     font-size: 36px;
-    color: #4CAF50;
+    color: #703d1a;
     margin-bottom: 30px;
     font-weight: bold;
   }
   
   .terms-content h2 {
     font-size: 28px;
-    color: #4CAF50;
+    color: #703d1a;
     margin-top: 40px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -9689,14 +9718,14 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
   
   .refund-content h1 {
     font-size: 36px;
-    color: #4CAF50;
+    color: #703d1a;
     margin-bottom: 30px;
     font-weight: bold;
   }
   
   .refund-content h2 {
     font-size: 28px;
-    color: #4CAF50;
+    color: #703d1a;
     margin-top: 40px;
     margin-bottom: 20px;
     font-weight: bold;
@@ -9781,8 +9810,6 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
     margin: 4px 6px;
   }
 }
-
-
 
 
 
