@@ -2219,6 +2219,146 @@ h2.policy-head, h3.policy-head {
     transition: border-color 0.3s ease;
 }
 
+/* Outer container background color */
+.donation-container {
+  background: linear-gradient(to bottom, #FFD700, #FFB347);
+  padding: 60px 20px;
+}
+
+/* Inner quote box styling */
+.donation-quote-section {
+  max-width: 1150px;
+  max-height: 850px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  padding: 50px 110px;
+  border: 5px solid #3399ff;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.donation-quote-section h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #222;
+  margin-bottom: 30px;
+}
+
+.donation-quote-section p {
+  font-size: 16.7px;
+  line-height: 1.8;
+  margin: 20px 0;
+}
+
+.donation-quote-section .hindi {
+  font-family: 'Noto Sans Devanagari', sans-serif;
+  font-weight: 500;
+  color: #000;
+}
+
+.donation-quote-section .reference {
+  font-style: italic;
+  font-size: 16.5px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.quote-separator {
+  margin: -10px auto;
+  font-size: 28px;
+  color: #999;
+}
+
+/* ========================= */
+/* Responsive Styles */
+/* ========================= */
+
+@media screen and (max-width: 768px) {
+  .donation-quote-section {
+    padding: 40px 30px;
+  }
+
+  .donation-quote-section h2 {
+    font-size: 32px;
+  }
+
+  .donation-quote-section p {
+    font-size: 16px;
+  }
+
+  .quote-separator {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .donation-quote-section {
+    padding: 30px 20px;
+  }
+
+  .donation-quote-section h2 {
+    font-size: 28px;
+  }
+
+  .donation-quote-section p {
+    font-size: 15.5px;
+  }
+
+  .donation-quote-section .reference {
+    font-size: 16px;
+  }
+
+  .quote-separator {
+    font-size: 22px;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .donation-quote-section {
+    padding: 25px 15px;
+  }
+
+  .donation-quote-section h2 {
+    font-size: 26px;
+  }
+
+  .donation-quote-section p {
+    font-size: 15px;
+  }
+
+  .donation-quote-section .reference {
+    font-size: 15px;
+  }
+
+  .quote-separator {
+    font-size: 20px;
+  }
+}
+/* Tablet and below */
+@media screen and (max-width: 768px) {
+  .donation-quote-section {
+    padding: 40px 30px;
+    max-height: none; /* Let it expand */
+  }
+}
+
+/* Small devices (phones) */
+@media screen and (max-width: 480px) {
+  .donation-quote-section {
+    padding: 30px 20px;
+    max-height: none; /* Important for no cutoff */
+  }
+}
+
+/* Extra small devices (360px) */
+@media screen and (max-width: 360px) {
+  .donation-quote-section {
+    padding: 25px 15px;
+    max-height: none; /* Ensure full expansion */
+  }
+}
+
 .amount-input:focus {
     border-color: #8BC34A; /* Light green theme */
 }
