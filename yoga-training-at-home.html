@@ -625,7 +625,7 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
       </div>
   </div>
   <div class="subscribe-btn">
-    <button class="subscribe-btn" onclick="location.href='#register-section';">Register Now</button>
+    <button class="subscribe-btn" id="register-btn">Register Now</button>
   </div>
 </section>
 
@@ -1322,6 +1322,17 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
     const url = `checkout.html?amount=${amount}&session=${encodeURIComponent(sessionType)}`;
     window.location.href = url;
   }
+</script>
+<script>
+  document.getElementById("register-btn").addEventListener("click", function () {
+    const target = document.getElementById("register-section");
+    if (target) {
+      target.scrollIntoView({ behavior: "smooth" });
+      
+      // This prevents the hash from appearing in the URL
+      history.replaceState(null, '', location.pathname + location.search);
+    }
+  });
 </script>
 
 </body>
