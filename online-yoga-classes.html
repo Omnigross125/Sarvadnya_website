@@ -630,7 +630,7 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
       </div>
   </div>
   <div class="subscribe-btn">
-    <button class="subscribe-btn" onclick="window.location.href='https://wa.me/918208367205';">Register Now</button>
+   <button class="subscribe-btn" onclick="location.href='#register-section';">Register Now</button>
   </div>
 </section>
 
@@ -700,8 +700,8 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
 <!-- pricing section -->
-<section class="pricing-section">
-<div class="pricing-section">
+<section class="pricing-section" id="register-section">
+ <div class="pricing-section">
   <div class="toggle-buttons">
       <button id="oneToOneBtn" class="active">Online Group Session</button>
       <button id="groupBtn">Offline Group Sessions</button>
@@ -782,7 +782,7 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
           <button class="join-now">Join Now</button>
       </div> -->
   <!-- </div> -->
-</div>
+  </div>
 </section>
 
 
@@ -1220,6 +1220,14 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
     window.location.href = url;
   }
 </script>
+
+<script>
+  function redirectToCheckout(amount, sessionType) {
+    const url = `checkout.html?amount=${amount}&session=${encodeURIComponent(sessionType)}`;
+    window.location.href = url;
+  }
+</script>
+
 </body>
 
  
