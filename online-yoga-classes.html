@@ -736,7 +736,7 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
             <li>Validity For 1 Year</li>
             <li></li>
         </ul>
-        <button class="join-now" onclick="window.location.href='https://wa.me/918208367205';">Join Trial ₹ 199</button>
+        <button class="join-now" onclick="redirectToCheckout(199, 'Online-Group-Session')">Join Trial ₹ 199</button>
     </div>
       <!-- <div class="pricing-box">
           <h3>Online Group Session</h3>
@@ -769,7 +769,7 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
               <li>Validity For 1 Year</li>
               <li></li>
           </ul>
-          <button class="join-now" onclick="window.location.href='https://wa.me/918208367205';">Join Trial ₹ 199</button>
+          <button class="join-now" onclick="redirectToCheckout(199, 'Offline-Group-Session')">Join Trial ₹ 199</button>
       </div>
       <!-- <div class="pricing-box">
           <h3>Group Session - Unlimited Monthly</h3>
@@ -1100,12 +1100,12 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
               <div class="custom-footer-column">
                   <h3 class="custom-footer-title">Donation</h3>
                   <ul class="custom-footer-list">
-                      <li><a href="SYoga-Anna-Dan/index.html">Anndan</a></li>
-                      <li><a href="SYoga-Sadhu-Bhojan/index.html">Sadhu Bhojan</a></li>
-                      <li><a href="SYoga-Offer-Pooja/index.html">Offer a Pooja</a></li>
-                     <li><a href="SYoga-join-membership/index.html">Join Membership</a></li>
-                     <li><a href="SYoga-New-Temple/index.html">New Temple</a></li>
-                      <li><a href="SYoga-New-Ashram/index.html">New Ashram</a></li>
+                      <li><a href="anna-dan/index.html">Anndan</a></li>
+                      <li><a href="sadhu-bhojan/index.html">Sadhu Bhojan</a></li>
+                      <li><a href="offer-pooja/index.html">Offer a Pooja</a></li>
+                     <li><a href="join-membership/index.html">Join Membership</a></li>
+                     <li><a href="new-temple/index.html">New Temple</a></li>
+                      <li><a href="new-ashram/index.html">New Ashram</a></li>
                   </ul>
               </div>
 
@@ -1214,7 +1214,12 @@ corporate yoga classes, Female Yoga trainer at home, yoga training classes"/>
   gtag('config', 'G-R47NNKN0NF');
 </script>
 
-
+<script>
+  function redirectToCheckout(amount, sessionType) {
+    const url = `checkout.html?amount=${amount}&session=${encodeURIComponent(sessionType)}`;
+    window.location.href = url;
+  }
+</script>
 </body>
 
  
