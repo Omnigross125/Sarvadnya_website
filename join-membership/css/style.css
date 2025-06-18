@@ -2234,7 +2234,7 @@ h2.policy-head, h3.policy-head {
 .benefits-container {
   width: 100%;
   padding: 50px 5%;
-  background: linear-gradient(to bottom, #FFD700, #FFB347);
+  background: #FDDA0D;
   text-align: center;
 }
 
@@ -2279,6 +2279,7 @@ h2.policy-head, h3.policy-head {
 .benefit-item p {
   margin: 5px 0 0;
   font-size: 16px;
+  font-weight: 600;
   color: #333;
 }
 .benefit-item span{
