@@ -2238,6 +2238,7 @@ h2.policy-head, h3.policy-head {
     outline: none;
     transition: border-color 0.3s ease;
 }
+
 /* Outer container background color */
 .donation-container {
   background: linear-gradient(to bottom, #FFD700, #FFB347);
@@ -2377,7 +2378,6 @@ h2.policy-head, h3.policy-head {
     max-height: none; /* Ensure full expansion */
   }
 }
-
 
 .amount-input:focus {
     border-color: #8BC34A; /* Light green theme */
