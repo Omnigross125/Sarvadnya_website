@@ -1159,7 +1159,7 @@ select:focus {
 /* Customized Slider Section */
 .custom-slider {
   width: 100%;
-  height: 650px; /* You can adjust height here */
+  height: 730px; /* You can adjust height here */
   overflow: hidden;
   position: relative;
 }
