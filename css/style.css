@@ -1149,125 +1149,56 @@ select:focus {
     Rev Slider Wrapper style
 =============================================
 ***/
-.rev_slider_wrapper {
-    
-}
-.rev_slider_wrapper .slide-content-box h2 {
-    color: #e9d80c;
-    font-size: 30px;
-    font-weight: 400;
-    line-height: 40px;
-    text-transform: none;
-    font-family: 'Courgette', cursive;
-}
-.rev_slider_wrapper .slide-content-box h1 {
-    color: #ffffff;
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 66px;
-    text-transform: none;
-    margin: 0 0 7px;
-    font-family: 'Poppins', sans-serif;
-}
-.rev_slider_wrapper .slide-content-box p{
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: 400;
-    line-height: 28px;
-    margin: 0px 0 33px;
-    font-family: 'Open Sans', sans-serif;
-}
-.rev_slider_wrapper .slide-content-box .button a{
-    border: 2px solid #2acb35;
-    background: #2acb35;
-    padding: 12px 38px 11px;
-    color: #ffffff;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    font-family: 'Poppins', sans-serif;
-    margin-right: 16px;
-    border-radius: 30px;
-}
-.rev_slider_wrapper .slide-content-box .button a:hover{
-    background: #252525;
-    border-color: #fff;
-}
-.rev_slider_wrapper .slide-content-box .button a.btn-style-two{
-    background: #ffffff;
-    border-color: #ffffff;
-    color: #2acb35;
-}
-.rev_slider_wrapper .slide-content-box .button a.btn-style-two:hover{
-    background: #2acb35;
-    color: #ffffff;
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-.rev_slider_wrapper .slide-content-box.middle-slide h2{
-  text-align: center;
-}
-.rev_slider_wrapper .slide-content-box.middle-slide h1{
-  text-align: center;
-}
-.rev_slider_wrapper .slide-content-box.middle-slide p{
-  text-align: center;
-}
-.rev_slider_wrapper .slide-content-box.middle-slide .button a{}
-
-.rev_slider_wrapper .slide-content-box.right-slide h1{
-    margin: 12px 0 7px
+/* Customized Slider Section */
+.custom-slider {
+  width: 100%;
+  height: 730px; /* You can adjust height here */
+  overflow: hidden;
+  position: relative;
 }
 
+/* Desktop and Mobile Banner Containers */
+.banner {
+  width: 100%;
+  height: 100%;
+}
 
-.tparrows {
-    background: rgba(0, 0, 0, 0.08);
-    cursor: pointer;
+.banner-img {
+  width: 100vw;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Responsive Visibility */
+.desktop {
+  display: block;
+}
+.mobile {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .desktop {
+    display: none;
+  }
+  .mobile {
     display: block;
-    height: 50px;
-    position: absolute;
-    width: 50px;
-    z-index: 1000;
-    transition: all 500ms ease;
-    border-radius: 50%;
+    height: 480px; /* You can also customize mobile height */
+  }
 }
-.tparrows:before{
-    font-size:18px; 
-    font-weight: 700;
-    color:#fff; 
-    display:block; 
-    line-height: 50px; 
-    text-align: center;
-    transition: all 500ms ease;
+/* Media Query for Mobile Screens */
+@media (max-width: 768px) {
+  .custom-slider {
+    height: 480px; /* Adjust as needed for mobile */
+  }
 }
-.tparrows:hover{
-    background:#2acb35;
-}
-.tparrows:hover:before{
-    color: #fff;    
-}
-.rev_slider_wrapper .slotholder:before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9;
-}
-
-.rev_slider_wrapper {
-    margin-top: 125px; /* Adjust based on your header's height */
-    z-index: 5; /* Make sure this is higher than your menu */
-    position: relative;
-}
-
-/* For laptop screens and larger (min-width: 1024px) */
-@media (min-width: 1024px) {
-    .rev_slider_wrapper {
-        margin-top: 80px;
-    }
-}
-
 
 
 /* youtube video container styles  */
