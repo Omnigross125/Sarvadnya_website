@@ -925,6 +925,15 @@
     Breadcrumb bottom area style
 =============================================
 ***/   
+.breadcrumb-bottom-area {
+    background-color: #171717;
+}
+.breadcrumb-bottom-area .left ul li a{
+    color: #fff;
+}
+.breadcrumb-bottom-area .left ul li.active{
+    color: #fff;    
+}
 .breadcrumb-area .breadcrumbs h1 {
     line-height: 120px;
 }        
@@ -941,7 +950,11 @@
     float: none !important;
     text-align: center;
     margin: 2px 0 0;
-}    
+}   
+.fa-angle-right:before {
+    content: "\f105";
+    color: #fff;
+} 
    
     
 /*** 
