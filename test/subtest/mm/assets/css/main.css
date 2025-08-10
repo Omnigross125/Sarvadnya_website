@@ -8290,11 +8290,10 @@ html {
 }
 
 .client-reels-section {
-    background-color: #F8EBE6; /* Section background */
-    padding: 0px 0;
-    padding-bottom: 120px;
+    background-color: #fff; /* Section background */
+    padding: 80px 0;
+    padding-bottom: 0px;
 }
-
 .client-reel-video-box {
     position: relative;
     width: 100%;
@@ -8498,3 +8497,4 @@ html {
         margin-bottom: 60px;
     }
 }
+
