@@ -7850,8 +7850,9 @@ body.page-about .slider-first-screen {
 }
 
 .instructor-heading h2 {
+    font-family: 'Rye', cursive;
     font-size: 2rem;
-    font-weight: 700;
+    font-weight: 500;
     color: #EB5A31; /* theme color */
     margin-bottom: 10px;
 }
@@ -7891,8 +7892,9 @@ body.page-about .slider-first-screen {
 }
 
 .instructor-details h2 {
+    font-family: 'Rye', cursive;
     color: #EB5A31;
-    font-weight: 700;
+    font-weight: 500;
     margin-bottom: 10px;
 }
 
@@ -8142,6 +8144,11 @@ body.page-about .slider-first-screen {
     margin: 3px 0;
     font-size: 0.95rem;
     color: #444;
+}
+
+.detail-item h4 {
+    font-family: 'Rye', cursive;
+    font-weight: 500;
 }
 
 /* Price Styling */
