@@ -1149,6 +1149,7 @@ select:focus {
     Rev Slider Wrapper style
 =============================================
 ***/
+/* Base Reset */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -1199,6 +1200,7 @@ select:focus {
     height: 480px; /* Adjust as needed for mobile */
   }
 }
+
 
 
 /* youtube video container styles  */
@@ -9715,6 +9717,43 @@ body.sidebar-open .mainmenu-area.stricky-fixed {
 
 
 
+/* Show desktop version by default */
+.desktop-breadcrumb {
+  display: block;
+}
+
+/* Hide mobile version by default */
+.mobile-breadcrumb {
+  display: none;
+  position: relative;
+  text-align: center;
+}
+
+.mobile-banner-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.mobile-breadcrumb-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+/* Switch visibility for mobile view */
+@media (max-width: 767px) {
+  .desktop-breadcrumb {
+    display: none;
+  }
+  .mobile-breadcrumb {
+    display: block;
+  }
+}
 
 /*** 
 =============================================
