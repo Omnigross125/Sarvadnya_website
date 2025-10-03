@@ -8,7 +8,7 @@ $orderStatus_urls = [
     "uat"  => "https://api-preprod.phonepe.com/apis/pg-sandbox/checkout/v2/order/{merchantOrderId}/status"
 ];
 
-$FRONTEND_URL = "http://localhost/v2-test"; // Replace with your frontend
+$FRONTEND_URL = "https://sarvadnyayoga.com/test/subtest/v2-test/"; // Replace with your frontend
 
 if (!isset($_GET['merchantOrderId'])) {
     http_response_code(400);

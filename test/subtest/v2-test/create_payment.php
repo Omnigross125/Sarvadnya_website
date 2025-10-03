@@ -8,7 +8,7 @@ $payment_urls = [
     "uat"  => "https://api-preprod.phonepe.com/apis/pg-sandbox/checkout/v2/pay"
 ];
 
-$BACKEND_URL = "http://localhost/v2-test"; // Replace with your actual backend URL
+$BACKEND_URL = "https://sarvadnyayoga.com/test/subtest/v2-test/"; // Replace with your actual backend URL
 
 $merchantOrderId = "ORDID_" . uniqid();
 $token = getValidToken();
